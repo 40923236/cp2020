@@ -1,36 +1,139 @@
-<h1>About</h1>
-<p>此內容管理系統以 <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 作為 submodule 運作, 可以選定對應的版本運作, cmsimde 可以持續改版, 不會影響之前設為 submodule, 使用舊版 cmsimde 模組的內容管理相關運作.</p>
-<h4>利用 cmsimde 建立靜態網誌方法:</h4>
-<p>1. 在 github 建立倉儲, git clone 到近端</p>
-<p>2. 參考 <a href="https://github.com/mdecourse/newcms">https://github.com/mdecourse/newcms</a>, 加入除了 cmsimde 目錄外的所有內容</p>
-<p>以 git submodule add <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> cmsimde</p>
-<p>建立 cmsimde 目錄, 並從 github 取下子模組內容.</p>
-<p>3.在近端維護時, 更換目錄到倉儲中的 cmsimde, 以 python wsgi.py 啟動近端網際伺服器.</p>
-<p>動態內容編輯完成後, 以 generate_pages 轉為靜態內容, 以 git add commit 及 push 將內容推到遠端.</p>
-<p>4. 之後若要以 git clone 取下包含 submodule 的所有內容, 執行:</p>
-<p>git clone --recurse-submodules<span> </span><a href="https://github.com/mdecourse/newcms.git">https://github.com/mdecourse/newcms.git</a></p>
-<h2>Develop</h2>
-<p><a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 的開發, 可以在一個目錄中放入 cmsimde, 然後將 up_dir 中的內容放到與 cmsimde 目錄同位階的地方, 使用 command 進入 cmsimde 目錄, 執行 python wsgi.py, 就可以啟動, 以瀏覽器 https://localhost:9443 就可以連接, 以 admin 作為管理者密碼, 就可以登入維護內容.</p>
-<p>cmsimde 的開發採用 Leo Editor, 開啟 cmsimde 目錄中的 cmsimde.leo 就可以進行程式修改, 結束後, 若要保留網際內容, 只要將 cmsimde 外部的內容倒回 up_dir 目錄中即可後續對 cmsimde 遠端倉儲進行改版.</p>
-<p>init.py 位於  up_dir 目錄, 可以設定 site_title 與 uwsgi 等變數.</p>
-<h1>作業進度</h1>
-<p>Week              進度目標                           完成進度                </p>
-<p> W1          建立Github倉儲                         已完成</p>
-<p> W2          建立網頁                                   <span>已完成</span></p>
-<p> W3          與組員分配討論HW1內容          <span>已完成</span></p>
-<p> W4          建立PC Hardware帳號              <span>已完成</span></p>
-<p> W5          將<span>PC Hardware PCH10             未完成</span></p>
-<p><span>                ,PCH11資料完成英翻中             (PCH11 </span></p>
-<p>                放至個人網頁                           20%)</p>
-<p></p>
-<p></p>
-<p>未來規劃</p>
-<p> W6           完成PCH11英翻中</p>
-<p></p><h1>HW1</h1>
-<p>作業1:個人分配範圍</p>
-<p><span>PCH 10:Networking Hardware</span></p>
-<p>PCH 11:<span>Networking Media</span></p>
-<h2>PCH10</h2>
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>40923236 詹宗樺 cp2020</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">40923236 詹宗樺 cp2020</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li class='has-children'><a href='About.html'>About</a><ul class='dropdown'><li><a href='Develop.html'>Develop</a></li></ul><li><a href='作業進度.html'>作業進度</a><li class='has-children'><a href='HW1.html'>HW1</a><ul class='dropdown'><li><a href='PCH10.html'>PCH10</a><li><a href='PCH11.html'>PCH11</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">HW1 << <a href='HW1.html'>Previous</a> <a href='PCH11.html'>Next</a> >> PCH11<br /><h1>PCH10</h1>
 <p><span>PCH 10: 網路硬體(Networking Hardware)</span></p>
 <p><img src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH10/webcontent/PCH10/image1.jpeg"/></p>
 <div class="section" id="N10687">
@@ -196,156 +299,54 @@
 <p lang="" style="text-align: center;"><span><span></span></span></p>
 <p lang=""><span><span>In the lab below, you should install a new network interface card (NIC). In doing so, be sure that the card has the right pinout. Also, be sure to use proper ESD precautions.</span></span></p>
 <p id="N106F9" lang=""><span><span>在下面的實驗室中，您應該安裝新的網絡接口卡（NIC）。</span><span>這樣做時，請確保卡具有正確的引腳排列。</span><span>另外，請確保使用適當的ESD預防措施。</span></span></p>
-<h2>PCH11</h2>
-<p><span><span></span></span>PCH11:網路媒體(Networking Media)</p>
-<p><span>光纖電纜  </span>Fiber-Optic Cable</p>
-<p></p>
-<p>總覽  Overview</p>
-<p><span>In this module, we’re going to discuss the various types of network media. We will begin with fiber-optic cable and then discuss twisted pair cable and coaxial cable. For each of these cable types, we will discuss appearance, characteristics, and types of connectors, as well as speed and limitations.</span></p>
-<p><span><span>在本模塊中，我們將討論各種類型的網絡媒體。</span><span>我們將從光纖電纜開始，然後討論雙絞線電纜和同軸電纜。</span><span>對於每種電纜類型，我們將討論連接器的外觀，特性和類型，以及速度和限制。</span></span></p>
-<p><span></span></p>
-<p><span>光纖電纜  Fiber-Optic Cable</span></p>
-<p><span>Fiber-optic cables are constructed by using a glass core at the center of the cable that is surrounded by cladding. In order to send data from one end of the cable to the other, light from a light-emitting diode (LED) or laser is used to transmit the signal down the glass fiber at the center of the cable. Because the data is being transmitted using light, it is immune to the effects of electromagnetic interference (EMI) that impact traditional copper-based cables, such as twisted pair and coaxial cables. Fiber-optic cables possess the ability to send the data a very far distance (many miles) without the use of a repeater. They also can carry a significant amount of data due to their large bandwidth and the information traveling at light speed. Their bandwidth can be measured in gigabits or even terabits per second. There are two types of fiber cables: multimode and single-mode fiber.</span></p>
-<p><span><span>光纖電纜是通過在電纜的中心使用玻璃芯構成的，該芯層被包層圍繞。</span><span>為了將數據從電纜的一端發送到另一端，可使用來自發光二極管（LED）或激光的光沿電纜中心的玻璃纖維向下傳輸信號。</span><span>由於數據是通過光傳輸的，因此不受電磁干擾（EMI）的影響，電磁干擾會影響傳統的銅基電纜，如雙絞線和同軸電纜。</span><span>光纖具有無需使用中繼器就可以很遠的距離（許多英里）發送數據的能力。</span><span>由於它們的大帶寬和以光速傳播的信息，它們還可以攜帶大量數據。</span><span>它們的帶寬可以每秒千兆比特或什至兆兆比特來度量。</span></span></p>
-<p style="text-align: center;"><img src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH11/webcontent/PCH11/image1.png"/></p>
-<p style="text-align: left;"></p>
-<p style="text-align: center;"><span>光纖電纜。</span></p>
-<p id="N106A2" lang="">Multimode fiber cables (MMF) contain a larger core than the single-mode variety. The core size for a multimode fiber is 62.5 microns. A micron is a very small unit of measurement—it is actually even smaller than the width of a human hair. MMF’s larger core enables multiple modes of travel for the light from one end of the cable to the other. This allows a single fiber to carry multiple signals across it, with each signal being transmitted at a slightly different reflective angle. When the light reaches the destination, the signals are then converted back into 1s and 0s and passed to the computer by the network interface card. Multimode fiber is commonly used in shorter distance fiber connections, such as from a router to a switch, a switch to a switch, or a server to a switch.</p>
-<p id="N106A5" lang="">Single-mode fiber cables (SMF) contain a much smaller core than the multimode variety. The core size for SMF is 10 microns. SMF’s smaller core only allows for a single mode of travel for the light from one end of the cable to the other. This straight-through connection allows for data to travel longer distances without a repeater than it can travel using MMF. When the light reaches the destination, the signals are then converted back into 1s and 0s and passed to the computer by the network interface card. Single mode fiber is commonly used in very long distance fiber connections, such as a backbone connection from one local area network to another.</p>
-<p id="N106A2" lang=""><span>多模光纜（MMF）的芯線比單模光纜大。多模光纖的纖芯尺寸為62.5微米。微米是非常小的度量單位，實際上甚至比人類頭髮的寬度還小。MMF的較大芯線實現了從電纜一端到另一端的多種傳播模式。這樣一來，單根光纖就可以在其上傳輸多個信號，而每個信號的反射角度都會稍有不同。當光線到達目的地時，信號然後被轉換回1s和0s，並通過網絡接口卡傳遞到計算機。多模光纖通常用於較短距離的光纖連接中，例如從路由器到交換機，從交換機到交換機或從服務器到交換機。</span></p>
-<p id="N106A5" lang=""><span><span>單模光纜（SMF）的芯線比多模光纜小得多。</span><span>SMF的芯尺寸為10微米。</span><span>SMF的較小芯線僅允許光從電纜一端到另一端的單一傳播模式。</span><span>這種直通連接允許數據在沒有中繼器的情況下傳輸的距離比使用MMF傳輸的距離更長。</span><span>當光線到達目的地時，信號然後被轉換回1s和0s，並通過網絡接口卡傳遞到計算機。</span><span>單模光纖通常用於超長距離的光纖連接中，例如從一個局域網到另一個局域網的骨干連接。</span></span></p>
-<p lang=""><span><span></span></span></p>
-<p lang=""><span>光纖電纜</span><span>連接器  </span>Fiber-Optic Cable Connectors</p>
-<p id="N106B2" lang="">Fiber cables only come in the two types discussed above: single-mode and multimode. However, the ends of each of these cables come in four varieties.</p>
-<p id="N106B5" lang="">The subscriber connector (SC) is a fiber-optic cable connector that uses a push-pull mechanism to latch into the port, similar to common audio and video cables. If you want to enable bidirectional transmission for sending and receiving data, you need to have two fiber cables, so sometimes a dual SC connector is used.</p>
-<p id="N106B8" lang="">The straight tip (ST) connector is a fiber-optic cable connector that uses a bayonet plug and socket. It was the first de facto standard connector for most commercial wiring using fiber cables and it is very commonly found in fiber networks.</p>
-<p id="N106BB" lang="">The Lucent connector (LC) is a miniaturized version of the fiber-optic SC connector. It looks somewhat like the SC, but is half the size, with a 1.25 mm ferrule instead of 2.5 mm, making it very useful when connecting multiple devices in a small area, such as on a 24-port switch’s front panel.</p>
-<p id="N106BE" lang="">The mechanical transfer-registered jack (MT-RJ) connector is a fiber-optic cable connector that is very popular for small-form-factor devices due to its small size. This connector houses two fibers and mates with locating pins on the plug. These connectors are commonly found connecting a switch to a patch panel, because both devices have a limited area on their front panels.</p>
-<p id="N106B2" lang=""><span>光纖電纜僅屬於上述兩種類型：單模和多模。但是，每條電纜的末端都有四種。</span></p>
-<p id="N106B5" lang=""><span><span>用戶連接器（SC）是一種光纖電纜連接器，與普通的音頻和視頻電纜類似，它使用推挽機制鎖入端口。</span><span>如果要啟用雙向傳輸以發送和接收數據，則需要使用兩根光纖電纜，因此有時會使用雙SC連接器。</span></span></p>
-<p id="N106B8" lang=""><span><span>筆直（ST）連接器是使用卡口插頭和插座的光纖電纜連接器。</span><span>它是大多數使用光纖電纜進行商業佈線的第一個事實上的標準連接器，並且在光纖網絡中非常常見。</span></span></p>
-<p id="N106BB" lang=""><span><span>朗訊連接器（LC）是光纖SC連接器的微型版本。</span><span>它看上去有點像SC，但尺寸只有一半，只有1.25毫米而不是2.5毫米的插芯，因此在小區域（例如24端口交換機的前面板）連接多個設備時非常有用。</span></span></p>
-<p id="N106BE" lang=""><span><span>機械傳輸註冊插孔（MT-RJ）連接器是一種光纖電纜連接器，由於其尺寸小，在小型設備中非常受歡迎。</span><span>該連接器容納兩根光纖，並與插頭上的定位銷配對。</span><span>通常發現這些連接器將開關連接到配線架，因為兩個設備的前面板都有有限的區域。</span></span></p>
-<p lang=""><span><span></span></span></p>
-<p lang=""><span><span></span></span></p>
-<p lang=""><span><span></span></span></p>
-<p><span>雙絞線  </span>Twisted Pair Cable</p>
-<p id="N1068B" lang="">While fiber-optic cable is great for its speed, distance, and security, it hasn’t yet become commonplace in most networks. Instead, we are still using the same type of cabling we have been using for the past two to three decades — twisted pair. Twisted pair cable is the most popular physical LAN media in the world today. Each cable contains four pairs of individually insulated strands of copper wire. Each pair is twisted together to minimize the amount of electromagnetic interference (EMI). The more twists there are in the cable, the less EMI there will be. Twisted pair cable is broken up into two types: unshielded twisted pair (UTP) and shielded twisted pair (STP).</p>
-<p lang=""><span>儘管光纜在速度，距離和安全性方面都非常出色，但在大多數網絡中尚未普及。</span><span>相反，我們仍在使用過去兩到三十年來一直使用的相同類型的電纜-雙絞線。</span><span>雙絞線電纜是當今世界上最流行的物理LAN介質。</span><span>每條電纜包含四對獨立絕緣的銅線。</span><span>每對絞合在一起以最大程度地減少電磁干擾（EMI）。</span><span>電纜中的扭曲越多，EMI越小。</span><span>雙絞線分為兩種類型：非屏蔽雙絞線（UTP）和屏蔽雙絞線（STP）。</span></p>
-<p style="text-align: center;"><span class="imagewrap"><span class="image"><img alt="Photograph of connector. The end is transparent plastic and cables and copper connections are visible." class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH11/webcontent/PCH11/image6.png" title="Photograph of connector. The end is transparent plastic and cables and copper connections are visible."/></span></span></p>
-<p style="text-align: center;"><span class="imagewrap"><span class="image"><span>光纖連接器。</span></span></span></p>
-<p id="N1069C" lang="">Shielded twisted pair cable is built very similarly to unshielded twisted pair, except that the pairs of wires are also surrounded by a metallic shielding (like foil). This outer foil shielding minimizes the EMI to which the cable is exposed. This increases the security and reliability of the cable. Unfortunately, however, this also increases the cost of the cable, so it is typically used only in high-production environments where the extra security is worth the extra cost.</p>
-<p id="N1069F" lang="">The more common type of cabling is unshielded twisted pair cable. Instead of using extra shielding, this cable relies on the twisting of its copper pairs to minimize the effects of EMI. Each twisted pair is twisted to insulate itself from the other pairs, and because there is no additional shielding, it is available at a lower cost than STP. Therefore, UTP is the most common media of choice for small office, home office, residential, and many commercial networks.</p>
-<p id="N1069C" lang=""><span>屏蔽雙絞線電纜的構造與非屏蔽雙絞線非常相似，不同的是，成對的電線也被金屬屏蔽層（如金屬箔）圍繞。外部箔屏蔽層可最大程度地減小電纜所遭受的EMI。這增加了電纜的安全性和可靠性。但是，不幸的是，這也增加了電纜的成本，因此通常僅在高生產環境中使用，在這種環境中，額外的安全性值得額外的成本。</span></p>
-<p id="N1069F" lang=""><span><span>電纜的最常見類型是非屏蔽雙絞線電纜。</span><span>該電纜不使用額外的屏蔽，而是依靠其銅線對的絞合來最大程度地減小EMI的影響。</span><span>每個雙絞線都經過絞合，以使其自身與其他雙絞線絕緣，並且由於沒有額外的屏蔽，因此可以以比STP更低的成本獲得。</span><span>因此，UTP是小型辦公室，家庭辦公室，住宅和許多商業網絡中最常見的選擇媒體。</span></span></p>
-<p lang="" style="text-align: center;"><img alt="Photograph of a blue cable with part of the sheathing removed. Inside, there are four twisted pair cables: green and white, orange and white, blue and white, and brown and white. The four twisted pairs are also twisted together." src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH11/webcontent/PCH11/image7.png"/></p>
-<p lang="" style="text-align: center;"><span>無護套的雙絞線電纜。</span></p>
-<p lang="" style="text-align: center;"><span></span></p>
-<p lang="" style="text-align: left;"><span>分類雙絞線電纜  Categorizing Twisted Pair Cable</span></p>
-<p id="N106B9" lang="">Twisted pair cable is categorized based on a category (cat) number. For example, cat 3, or category 3, is the oldest type of cable that we use. It was introduced back in the 1980s and 1990s for use in the first star topologies. The maximum throughput or bandwidth of cat 3 cabling is only 10 Mbps (megabits per second). The cat 3, like all twisted pair cabling, cannot go farther than 100 meters without using a repeater, switch, or active hub to amplify the signal. This limited distance is attributable to the copper wiring in these cables. As the signal travels over the copper wire, the natural resistance to the wire decreases the signal’s strength, and it eventually becomes too weak for the distant end to receive. For this reason, there is a 100 meter limitation when building and designing a twisted pair network.</p>
-<p id="N106BC" lang="">Cat 5 cables were an improvement on the older cat 3 cables and contain more twists, giving them more shielding from EMI and a maximum bandwidth of 100 Mbps. Cat 5e, or cat 5 enhanced, increased the speed of the maximum throughput to one Gbps, or 1000 Mbps, and became a gap filler until cat 6 cabling became commonplace.</p>
-<p id="N106BF" lang="">Cat 6a overcomes the 37-55 meter limitation of cat 6 when used in 10GBaseT. Cat 7, the newest standard, is shielded and provides connections up to 10 Gbps with a maximum distance of 100 meters. “Cat 7 and cat 7a cabling will be used for backbone connections between servers within a data center” and “provide an alternative to using fiber-optic cabling within the data center” (from<a href="http://www.cablestogo.com/learning/library/data-center/cat7-overview" id="_i_4" lang="" target="_blank">http://www.cablestogo.com/learning/library/data-center/cat7-overview</a>).</p>
-<p id="N106C8" lang="">All cable categories up to cat 5e and cat 6a have a maximum distance of 100 meters. When used in 10GBaseT, the maximum distance for cat 6 is 55 meters. Cat 7 is shielded and exceeds the 100 meter limit. As the category of the cable increases, so do the number of twists per inch and the frequency range, allowing for more data and improved protection against EMI. Best practice for copper cabling is<span> </span><em class="italic" lang="">not<span> </span></em>to run cable lengths to the maximum because attenuation will reduce data capacity.</p>
-<div class="section" id="categorizing_twisted_pair">
-<div class="sectionContain">
-<p id="N106B9" lang=""><span>雙絞線電纜根據類別（類別）編號進行分類。例如，類別3（或類別3）是我們使用的最古老的電纜類型。它是在1980年代和1990年代引入的，用於第一批星形拓撲。Cat 3電纜的最大吞吐量或帶寬僅為10 Mbps（兆位/秒）。與所有雙絞線電纜一樣，如果不使用中繼器，交換機或有源集線器來放大信號，則Cat 3不能走超過100米。這種有限的距離歸因於這些電纜中的銅線。當信號在銅線上傳輸時，導線的固有電阻會降低信號的強度，並且最終變得太弱而無法接收遠端。為此原因，</span></p>
-<p id="N106BC" lang=""><span>Cat 5電纜是對較舊的Cat 3電纜的改進，並包含更多的絞合線，從而使它們具有更大的EMI屏蔽能力，最大帶寬為100 Mbps。Cat 5e或Cat 5增強了，將最大吞吐量的速度提高到1 Gbps或1000 Mbps，並成為了空白，直到Cat 6電纜變得司空見慣。</span></p>
-<p id="N106BF" lang=""><span>當在10GBaseT中使用時，Cat 6a克服了Cat 6的37-55米的限制。最新標準Cat 7被屏蔽，並提供高達10 Gbps的連接，最大距離為100米。“ Cat 7和Cat 7a電纜將用於數據中心內服務器之間的主干連接”，並且“提供在數據中心內使用光纖電纜的替代方法”（來自<span> </span></span><a href="http://www.cablestogo.com/learning/library/data-center/cat7-overview" id="_i_4" lang="" target="_blank"><span>http://www.cablestogo.com/learning/庫/數據中心/ cat7-overview</span></a><span>）。</span></p>
-<p id="N106C8" lang=""><span>直至Cat 5e和Cat 6a為止的所有電纜類別的最大距離為100米。在10GBaseT中使用時，類別6的最大距離為55米。Cat 7被屏蔽並超過100米的限制。隨著電纜類別的增加，每英寸的捻數和頻率範圍也會增加，從而可以提供更多的數據並改善對EMI的保護。銅纜佈線的最佳實踐是</span><em class="italic" lang=""><span>不要</span></em><span>使電纜長度最大，因為衰減會降低數據容量。</span></p>
-<table align="center" cellspacing="0" class="wbtable" lang="">
-<thead>
-<tr>
-<th lang=""><em class="bold" lang="">Category</em></th>
-<th lang=""><em class="bold" lang="">Maximum Throughput</em></th>
-<th lang=""><em class="bold" lang="">LAN Application</em></th>
-</tr>
-<tr>
-<th lang="">Cat 3</th>
-<th lang="">10Mbps</th>
-<th lang="">10BaseT; 100BaseT4deprecated</th>
-</tr>
-<tr>
-<th lang="">Cat 5</th>
-<th lang="">100Mbps</th>
-<th lang="">10/100/1000BaseT100/1000BaseTX</th>
-</tr>
-<tr>
-<th lang="">Cat 5e</th>
-<th lang="">1Gbps (1000Mbps)</th>
-<th lang="">10/100/1000BaseT100/1000BaseTX</th>
-</tr>
-<tr>
-<th lang="">Cat 6</th>
-<th lang="">1Gbps (1000Mbps)</th>
-<th lang="">10/100/1000BaseT100/1000BaseTX10GBaseT</th>
-</tr>
-<tr>
-<th lang="">Cat 6a</th>
-<th lang="">10Gbps</th>
-<th lang="">10/100/1000BaseT100/1000/BaseTX10GBaseT</th>
-</tr>
-<tr>
-<th lang="">Cat 7</th>
-<th lang="">10Gbps</th>
-<th lang="">10/100/1000BaseT100/1000/BaseTX10GBaseT</th>
-</tr>
-</thead>
-</table>
-<p></p>
-<table align="center" cellspacing="0" class="wbtable" lang="">
-<thead>
-<tr>
-<th lang=""><em class="bold" lang=""><span>類別</span></em></th>
-<th lang=""><em class="bold" lang=""><span>最大吞吐量</span></em></th>
-<th lang=""><em class="bold" lang=""><span>局域網應用</span></em></th>
-</tr>
-<tr>
-<th lang=""><span>Cat 3</span></th>
-<th lang=""><span>10Mbps</span></th>
-<th lang=""><span>10BaseT;<span> </span>不推薦使用100BaseT4</span></th>
-</tr>
-<tr>
-<th lang=""><span>Cat 5</span></th>
-<th lang=""><span>100Mbps</span></th>
-<th lang=""><span>10/100 / 1000BaseT100 / 1000BaseTX</span></th>
-</tr>
-<tr>
-<th lang=""><span>Cat 5e</span></th>
-<th lang=""><span>1Gbps（1000Mbps）</span></th>
-<th lang=""><span>10/100 / 1000BaseT100 / 1000BaseTX</span></th>
-</tr>
-<tr>
-<th lang=""><span>Cat 6</span></th>
-<th lang=""><span>1Gbps（1000Mbps）</span></th>
-<th lang=""><span>10/100 / 1000BaseT100 / 1000BaseTX10GBaseT</span></th>
-</tr>
-<tr>
-<th lang=""><span>Cat 6a</span></th>
-<th lang=""><span>10Gbps</span></th>
-<th lang=""><span>10/100 / 1000BaseT100 / 1000 / BaseTX10GBaseT</span></th>
-</tr>
-<tr>
-<th lang=""><span>Cat 7</span></th>
-<th lang=""><span>10Gbps</span></th>
-<th lang=""><span>10/100 / 1000BaseT100 / 1000 / BaseTX10GBaseT</span></th>
-</tr>
-</thead>
-<tbody></tbody>
-</table>
-</div>
-</div>
-<div class="section" id="N1072E">
-<div class="sectionContain">
-<p><span title="快速向上滾動"><span><span>雙絞線連接器  Twisted pair Connectors</span></span></span></p>
-<p id="N10735" lang="">Twisted pair cables come with three main types of connectors. The first is the RJ-45 connector, which is an eight-pin connector used in Ethernet networks. Even though most Ethernet networks use only four pins, the RJ-45 provides eight pins for future use and capabilities. The first four pins are used to transmit (two pins) and receive (two pins).</p>
-<p id="N10738" lang="">The RJ-11 connector is used in the standard telephone system. The RJ-11 is a six-pin connector, but commonly only two pins are used for a telephone (transmit and receive). If you have a two-line phone, then four pins are used: two pins to transmit and two pins to receive.</p>
-<p id="N1073B" lang="">Finally, the DB-9 connector is used for RS-232 signals. This connector looks like a standard serial connector. It is used commonly for asynchronous serial communications, like connecting to an external modem. In modern networks, you will see this type of connector on a “rollover cable.” A rollover cable has a DB-9 on one side (which is connected to your laptop’s serial port), and an RJ-45 connector on the other side (which is used to connect to Cisco routers and switches to do administration tasks).</p>
-<p id="N1073E" lang="">A straight-through cable is a type of twisted pair cable that is used in local area networks to connect a computer to a network hub, such as a router. This type of cable is also sometimes called a patch cable. Both ends of the cable have an identical pinout, hence the name “straight-through.” A crossover cable switches the pinouts of the two ends of the cable, making the transmit and receive pins alternate on the two ends. This allows two workstations to connect directly to each other without the need for a hub, switch, or router.</p>
-<p id="N10735" lang=""><span><span>雙絞線電纜帶有三種主要類型的連接器。</span><span>第一個是RJ-45連接器，它是以太網網絡中使用的八針連接器。</span><span>即使大多數以太網僅使用四個引腳，RJ-45仍提供八個引腳供將來使用和使用。</span><span>前四個引腳用於發送（兩個引腳）和接收（兩個引腳）。</span></span></p>
-<p id="N10738" lang=""><span><span>RJ-11連接器用於標準電話系統。</span><span>RJ-11是一個六針連接器，但電話通常僅使用兩個針（發送和接收）。</span><span>如果您有兩線電話，則使用四個引腳：兩個引腳進行發送，兩個引腳進行接收。</span></span></p>
-<p id="N1073B" lang=""><span><span>最後，DB-9連接器用於RS-232信號。</span><span>該連接器看起來像標準的串行連接器。</span><span>它通常用於異步串行通信，例如連接到外部調製解調器。</span><span>在現代網絡中，您將在“翻轉電纜”上看到這種類型的連接器。</span><span>翻轉電纜的一側為DB-9（連接到筆記本電腦的串行端口），另一側為RJ-45連接器（用於連接到Cisco路由器和交換機以執行管理任務）。</span></span></p>
-<p id="N1073E" lang=""><span><span>直通電纜是雙絞線電纜的一種，在局域網中用於將計算機連接到網絡集線器（例如路由器）。</span><span>這種類型的電纜有時也稱為跳線。</span><span>電纜的兩端都具有相同的引出線，因此名稱為“直通”。</span><span>交叉電纜切換電纜兩端的引腳分配，使發送和接收引腳在兩端交替。</span><span>這允許兩個工作站直接相互連接，而無需集線器，交換機或路由器。</span></span></p>
-<span class="imagewrap"><span class="imagewrap"><span class="image"><img alt="帶有透明塑料矩形連接器的電纜的照片。" class="popimg" id="_i_5" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH11/webcontent/PCH11/image8.png" title="帶有透明塑料矩形連接器的電纜的照片。"/></span><span class="caption" lang=""></span></span></span>
-<p id="N10747" lang="" style="text-align: center;"><span><span>以太網電纜。</span></span></p>
-</div>
-</div>
+<br />HW1 << <a href='HW1.html'>Previous</a> <a href='PCH11.html'>Next</a> >> PCH11</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        

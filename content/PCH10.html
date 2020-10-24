@@ -140,13 +140,14 @@ img.add_border {
 <div class="sectionContain">
 <p lang=""></p>
 <p lang=""></p>
-<br/><span>網絡設備  </span>Network Devices</div>
+<br/><span><strong>網絡設備</strong>  </span>Network Devices</div>
 <div class="sectionContain"></div>
+<div class="sectionContain">-------------------------------------------------------------------------------------------------------</div>
 <div class="sectionContain">
 <p lang="">總覽  Overview</p>
 <p id="N1068E" lang="">Network devices vary according to their purpose. In this module, we will discuss various devices, such as hubs, switches, routers, bridges, network adapters, and media. As we discuss the devices, you should pay attention to their uses, their benefits, and their limitations. We will also explore how to install a network adapter.</p>
 <p lang="">網絡設備根據其用途而有所不同。在本模塊中，我們將討論各種設備，例如集線器，交換機，路由器，網橋，網絡適配器和媒體。在討論設備時，您應注意其用途，優點和局限性。我們還將探討如何安裝網絡適配器。</p>
-<p lang=""></p>
+<p lang="">-------------------------------------------------------------------------------------------------------</p>
 <p lang="">集線器  Hub</p>
 </div>
 </div>
@@ -170,7 +171,7 @@ img.add_border {
 </ul>
 <p id="N106AC" lang=""><span><span>集線器內部沒有設計固有的安全性，因為它們只是將從一個端口接收的所有信息重新廣播到另一個端口。</span><span>本質上，集線器僅依賴於連接的工作站來“偵聽”其端口上的信息（如果該信息專門針對該工作站）。</span><span>當信息沒有發送給它時，工作站應該只是忽略數據。</span><span>但是，可以將網卡置於“混雜”模式，在該模式下，網卡將偵聽所有流量，而不管該流量指向哪個工作站。</span><span>這使集線器非常不安全。</span></span></p>
 <p id="N106AF" lang=""><span><span>集線器的另一個缺點是它們必須共享帶寬，因為所有設備都在一個衝突域中運行。</span><span>因此，如果您有一個100 Mbps的集線器，但將四個設備連接到該集線器，則每個設備將有效地以25 Mbps的速度運行。</span><span>使用16端口，24端口或48端口集線器時，這可能會導致網絡流量大幅下降。</span></span></p>
-<p lang=""><span><span></span></span></p>
+<p lang=""><span><span></span></span>-------------------------------------------------------------------------------------------------------</p>
 <p lang=""><span><span>網橋  Bridges</span></span></p>
 <p lang=""><span><span>Because hubs operate with all devices acting in a single collision domain, a network device that could break up that collision domain into smaller units is required to help the network operate more efficiently. For example, if a hub is connected to another hub, they both operate under a single <a aria-describedby="N106CD" class="extra" id=""></a>collision domain<span><span> </span>. A bridge is used to connect two hubs together, but still keep the hubs’ collision domains separate. This interconnection of multiple network segments together allows networks to scale into large networks without significantly decreasing the performance of that network. Bridges are smarter than hubs; in fact, they actually analyze the source<span> </span></span><a aria-describedby="N106D6" class="extra" id=""></a>media access control (MAC) addresses<span><span> </span>in the frames entering the bridge and populate an internal MAC table based on those addresses. Future routing decisions are based upon those destination MAC addresses. This intelligent forwarding based on the destination MAC address in the frame allows for a decrease in network traffic by only forwarding information to the root hub associated with the network device. Network switches, which we will discuss, are the evolution of hubs and bridges.</span></span></span></p>
 </div>
@@ -178,7 +179,7 @@ img.add_border {
 <div class="section" id="N106C2">
 <div class="sectionContain">
 <p id="N106C9" lang=""><span><span>因為集線器與所有在單個衝突域中起作用的設備一起運行，所以需要一個可以將該衝突域分解為較小單元的網絡設備，以幫助網絡更高效地運行。</span><span>例如，如果一個集線器連接到另一個集線器，則它們都在單個</span></span><a aria-describedby="N106CD" class="extra" id=""></a><span><span>衝突域</span></span><span><span>下運行<span> </span></span><span>。</span><span>橋用於將兩個集線器連接在一起，但仍將集線器的衝突域分開。</span><span>多個網段的這種互連在一起使網絡可以擴展為大型網絡，而不會顯著降低該網絡的性能。</span><span>橋比集線器更智能；</span><span>實際上，他們實際上是在分析源<span> </span></span></span><a aria-describedby="N106D6" class="extra" id=""></a><span><span>媒體訪問控制（MAC）地址</span></span><span><span>在進入網橋的幀中，並根據這些地址填充內部MAC表。</span><span>未來的路由決策將基於那些目標MAC地址。</span><span>通過僅將信息轉發到與網絡設備關聯的根集線器，這種基於幀中目標MAC地址的智能轉發可減少網絡流量。</span><span>我們將討論的網絡交換機是集線器和網橋的演進。</span></span></p>
-<p lang=""><span><span></span></span></p>
+<p lang=""><span><span></span></span>-------------------------------------------------------------------------------------------------------</p>
 <p lang=""><span><span>交換機  Switches</span></span></p>
 <p id="N106E8" lang="">Switches are used to connect multiple network segments together, whether they connect from switch to switch, or switch to workstation. Each port on a switch acts as its own collision domain. A switch is an evolution from a hub and bridge. Essentially, each port on a switch operates as if it were a hub with a bridge connecting the ports of the hub to the workstation, thereby reducing the chance of a collision on the network to zero.</p>
 <p id="N106EB" lang="">Switches are intelligent devices that make forwarding decisions based upon the MAC addresses they learn and place in their MAC tables. A switch analyzes the source MAC addresses in frames as they enter the switch, and then populates the switch’s internal MAC table with the addresses to match them with the switch ports. This allows the switch to forward the frame only to the correct device on a single switch port, thereby increasing security and network speed.</p>
@@ -194,7 +195,7 @@ img.add_border {
 <p id="N106FA" lang="" style="text-align: left;"><span><span>安全性提高了，因為無論信息卡是否處於“混雜”模式，只有信息所針對的設備才能收到副本。</span><span>這在操作上類似於老式的電話接線員總機。</span><span>如果該信息未發送到您的端口，則您的端口將不會收到該信息。</span><span>另外，由於每個端口都在其自己的衝突域中，因此網絡速度得以提高。</span><span>無論網絡上有多少設備，每個交換機端口都可以全速運行，因此對於100 Mbps交換機，每個設備都以100 Mbps的速度運行。</span></span></p>
 <span class="imagewrap"><span class="imagewrap"><span class="image"><img class="popimg" id="_i_2" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH10/webcontent/PCH10/image2.png"/></span><span class="caption" lang=""></span></span></span>
 <p id="N10702" lang=""><span><span>與交換機的網絡圖。</span></span></p>
-<p lang=""><span><span></span></span></p>
+<p lang="" style="text-align: left;"><span><span></span></span>-------------------------------------------------------------------------------------------------------</p>
 <p lang="" style="text-align: left;"><span><span>路由器  Routers</span></span></p>
 <p lang="" style="text-align: left;"><span><span>Routers move data packets (layer 3), as opposed to switches (layer 2), which move frames. Routers separate network segments based on IP addressing and will only forward packets out of the segment when configured to do so. This design breaks up broadcast domains created by switches. It is up to the network professional to configure the router to connect different networks together and perform intelligent routing decisions. A router is most closely associated with a computer in that it has a processor and a sophisticated OS. The router compares the IP address of the source and destination of the packet and forwards traffic to/from a network based on this logical address (IPv4 and IPv6 addresses, for example). Routers are typically feature-rich devices and support a wide range of interface types, including unshielded twisted pair, fiber optic, and coaxial cable connections. Like a switch, each port on a router is a separate collision domain. Using access control lists, routers have the ability to block access to networks based on ports or addresses. This blocking adds to the network’s security.</span></span></p>
 </div>
@@ -204,7 +205,7 @@ img.add_border {
 <p id="N10714" lang="" style="text-align: left;"><span><span>路由器移動數據包（第3層），而交換機移動第2層（幀）。</span><span>路由器根據IP地址將網段分開，並且僅在配置  時將數據包轉發出網段。</span><span>這種設計可以分解由交換機創建的廣播域。</span><span>由網絡專業人員決定將路由器配置為將不同的網絡連接在一起並執行智能路由決策。</span><span>路由器與計算機的關係最為密切，因為它具有處理器和完善的操作系統。</span><span>路由器比較數據包源和目標的IP地址，並基於此邏輯地址（例如，IPv4和IPv6地址）將流量轉發到網絡或從網絡轉發流量。</span><span>路由器通常是功能豐富的設備，並且支持多種接口類型，</span><span>包括非屏蔽雙絞線，光纖和同軸電纜連接。</span><span>像交換機一樣，路由器上的每個端口都是一個單獨的衝突域。</span><span>使用訪問控制列表，路由器可以根據端口或地址阻止對網絡的訪問。</span><span>這種阻塞增加了網絡的安全性。</span></span></p>
 <span class="imagewrap"><span class="imagewrap"><span class="image"><img class="popimg" id="_i_4" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH10/webcontent/PCH10/image3.png"/></span><span class="caption" lang=""></span></span></span>
 <p id="N1071C" lang="" style="text-align: center;"><span><span>與路由器的網絡圖。</span></span></p>
-<p lang="" style="text-align: center;"><span><span></span></span></p>
+<p lang="" style="text-align: left;"><span><span></span></span>-------------------------------------------------------------------------------------------------------</p>
 <p lang="" style="text-align: left;"><span><span>網路適配器  N</span></span><span><span>etwork Adapter</span></span></p>
 <div class="section" id="network_adapter">
 <div class="sectionContain">
@@ -228,7 +229,7 @@ img.add_border {
 <li lang=""><span><span>通過使用外部連接的卡，例如USB或PCMCIA。</span></span></li>
 </ul>
 <p id="N1073E" lang=""><span><span>網絡適配器有兩種主要類型：有線和無線。</span><span>有線卡支持各種電纜類型，例如非屏蔽雙絞線（UTP），光纖和同軸電纜。</span><span>這些各種電纜類型稱為媒體。</span></span></p>
-<p lang=""><span><span></span></span></p>
+<p lang=""><span><span></span></span>-------------------------------------------------------------------------------------------------------</p>
 <p lang=""><span><span>媒體  Media</span></span></p>
 <p lang="" style="text-align: left;"><span><span>Media is the term used to categorize the physical connection between two device ports, such as between a computer and a switch. Media is made up of copper cable, fiber-optic cable, or even radio frequency waves (as used in Wi-Fi networks). Media varies greatly in cost, from free for radio waves, to cheap for unshielded twisted pair (copper cable), to expensive for fiber-optic cabling. The type of media determines the bandwidth speed, capacity, and distance limitations for a particular network. We will discuss media in more depth in a future module.</span></span></p>
 </div>
@@ -240,8 +241,8 @@ img.add_border {
 <p id="N10753" lang="" style="text-align: center;"><span><span>與指向連接媒體的箭頭的網絡圖。</span></span></p>
 <p lang="" style="text-align: center;"><span><span></span></span></p>
 <p lang="" style="text-align: center;"><span><span></span></span></p>
-<p lang="" style="text-align: left;"></p>
-<p style="text-align: left;"><span>安裝網絡適配器  </span>Install a Network Adapter</p>
+<p lang="" style="text-align: left;">-------------------------------------------------------------------------------------------------------</p>
+<p style="text-align: left;"><span><strong>安裝網絡適配器</strong>  </span>Install a Network Adapter</p>
 <p style="text-align: left;"><span>There are times when you may need to install an add-on network interface card (NIC). Current desktop motherboards should have a built-in NIC on the rear input/output (I/O) panel. Installing an add-on card can keep a machine in service if the built-in NIC is defective or if you need to upgrade to match the current local area network (LAN) specifications (i.e., from a 10/100 BaseT to 10/100/1000 or 10GBaseT).  </span></p>
 <p style="text-align: left;"><span><span>有時您可能需要安裝附加網絡接口卡（NIC）。</span><span>當前的台式機主板的後方輸入/輸出（I / O）面板上應具有內置的NIC。</span><span>如果內置NIC出現故障，或者需要升級以匹配當前的局域網（LAN）規格（即從10/100 <span style="color: #ff0000;">BaseT</span>到10/100），則安裝附加卡可以使機器保持運行狀態。 / 1000或10G<span style="background-color: #ffffff; color: #ff0000;">BaseT</span>）。</span></span></p>
 <p style="text-align: left;"><span><span></span></span></p>
@@ -298,8 +299,7 @@ img.add_border {
 <p id="N106F0" lang="" style="text-align: center;"><span><span>英特爾82574L千兆位以太網NIC PCI Express x1卡。</span></span></p>
 <p lang="" style="text-align: center;"><span><span></span></span></p>
 <p lang=""><span><span>In the lab below, you should install a new network interface card (NIC). In doing so, be sure that the card has the right pinout. Also, be sure to use proper ESD precautions.</span></span></p>
-<p id="N106F9" lang=""><span><span>在下面的實驗室中，您應該安裝新的網絡接口卡（NIC）。</span><span>這樣做時，請確保卡具有正確的引腳排列。</span><span>另外，請確保使用適當的ESD預防措施。</span></span></p>
-<br />HW1 << <a href='HW1.html'>Previous</a> <a href='PCH11.html'>Next</a> >> PCH11</div>
+<p id="N106F9" lang=""><span><span>在下面的實驗室中，您應該安裝新的網絡接口卡（NIC）。</span><span>這樣做時，請確保卡具有正確的引腳排列。</span><span>另外，請確保使用適當的ESD預防措施。</span></span></p><br />HW1 << <a href='HW1.html'>Previous</a> <a href='PCH11.html'>Next</a> >> PCH11</div>
         
     <!-- footer -->
       <div class="container">

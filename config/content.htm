@@ -1,32 +1,4 @@
-<h1>About</h1>
-<p>此內容管理系統以 <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 作為 submodule 運作, 可以選定對應的版本運作, cmsimde 可以持續改版, 不會影響之前設為 submodule, 使用舊版 cmsimde 模組的內容管理相關運作.</p>
-<h4>利用 cmsimde 建立靜態網誌方法:</h4>
-<p>1. 在 github 建立倉儲, git clone 到近端</p>
-<p>2. 參考 <a href="https://github.com/mdecourse/newcms">https://github.com/mdecourse/newcms</a>, 加入除了 cmsimde 目錄外的所有內容</p>
-<p>以 git submodule add <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> cmsimde</p>
-<p>建立 cmsimde 目錄, 並從 github 取下子模組內容.</p>
-<p>3.在近端維護時, 更換目錄到倉儲中的 cmsimde, 以 python wsgi.py 啟動近端網際伺服器.</p>
-<p>動態內容編輯完成後, 以 generate_pages 轉為靜態內容, 以 git add commit 及 push 將內容推到遠端.</p>
-<p>4. 之後若要以 git clone 取下包含 submodule 的所有內容, 執行:</p>
-<p>git clone --recurse-submodules<span> </span><a href="https://github.com/mdecourse/newcms.git">https://github.com/mdecourse/newcms.git</a></p>
-<h2>Develop</h2>
-<p><a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 的開發, 可以在一個目錄中放入 cmsimde, 然後將 up_dir 中的內容放到與 cmsimde 目錄同位階的地方, 使用 command 進入 cmsimde 目錄, 執行 python wsgi.py, 就可以啟動, 以瀏覽器 https://localhost:9443 就可以連接, 以 admin 作為管理者密碼, 就可以登入維護內容.</p>
-<p>cmsimde 的開發採用 Leo Editor, 開啟 cmsimde 目錄中的 cmsimde.leo 就可以進行程式修改, 結束後, 若要保留網際內容, 只要將 cmsimde 外部的內容倒回 up_dir 目錄中即可後續對 cmsimde 遠端倉儲進行改版.</p>
-<p>init.py 位於  up_dir 目錄, 可以設定 site_title 與 uwsgi 等變數.</p>
-<h1>作業進度</h1>
-<p>Week              進度目標                           完成進度                </p>
-<p> W1          建立Github倉儲                         已完成</p>
-<p> W2          建立網頁                                    <span>已完成</span></p>
-<p> W3          與組員分配討論HW1內容        <span>已完成</span></p>
-<p> W4          建立PC Hardware帳號               <span>已完成</span></p>
-<p> W5          將<span>PC Hardware PCH10              已完成</span></p>
-<p><span> W6           ,PCH11資料完成英翻中            </span></p>
-<p>                放至個人網頁                           </p>
-<p></p>
-<p></p>
-<p>未來規劃</p>
-<p> W7           完成作業心得</p>
-<p></p><h1>HW1</h1>
+<h1>HW1</h1>
 <p>作業1:個人分配範圍</p>
 <p><span>PCH 10:Networking Hardware</span></p>
 <p>PCH 11:<span>Networking Media</span></p>
@@ -196,7 +168,8 @@
 <p id="N106F0" lang="" style="text-align: center;"><span><span>英特爾82574L千兆位以太網NIC PCI Express x1卡。</span></span></p>
 <p lang="" style="text-align: center;"><span><span></span></span></p>
 <p lang=""><span><span>In the lab below, you should install a new network interface card (NIC). In doing so, be sure that the card has the right pinout. Also, be sure to use proper ESD precautions.</span></span></p>
-<p id="N106F9" lang=""><span><span>在下面的實驗室中，您應該安裝新的網絡接口卡（NIC）。</span><span>這樣做時，請確保卡具有正確的引腳排列。</span><span>另外，請確保使用適當的ESD預防措施。</span></span></p><h2>PCH11</h2>
+<p id="N106F9" lang=""><span><span>在下面的實驗室中，您應該安裝新的網絡接口卡（NIC）。</span><span>這樣做時，請確保卡具有正確的引腳排列。</span><span>另外，請確保使用適當的ESD預防措施。</span></span></p>
+<h2>PCH11</h2>
 <p><span><span></span></span>PCH11:網路媒體(Networking Media)</p>
 <p></p>
 <p><span><strong>光纖電纜 </strong> </span>Fiber-Optic Cable</p>
@@ -373,13 +346,42 @@
 <p lang="" style="text-align: left;">銅線和光纖  Copper vs. Fiber</p>
 <p lang="" style="text-align: left;"><span>When we compare the advantages and disadvantages of fiber-optic cables and copper (twisted pair) cables, we have to consider that fiber-optic has a higher bandwidth (measured in Gbps or Tbps), it can carry its signal many miles without the need of a repeater, it is immune to the effects of EMI, and it has much better security than traditional twisted pair cables. However, twisted pair cabling does hold some advantages of its own. For one, it is much less expensive than fiber-optic cabling. Also, copper wiring is much easier to install, taking only a few hours to learn. Finally, twisted pair cabling can be created and terminated using inexpensive tools. For example, a complete copper wiring toolset can be bought online for less than $50, while a complete fiber-optic kit may cost $1000 or more. For these reasons, copper has remained the dominant media in most local area networks.</span></p>
 <p lang="" style="text-align: left;"><span><span>當我們比較光纖電纜和銅纜（雙絞線）的優缺點時，我們必須考慮到光纖具有更高的帶寬（以Gbps或Tbps為單位），它可以將信號傳輸很多英里而無需作為中繼器，它不受EMI的影響，並且比傳統的雙絞線電纜具有更好的安全性。</span><span>但是，雙絞線電纜確實具有其自身的一些優點。</span><span>首先，它比光纖電纜便宜得多。</span><span>而且，銅線的安裝更容易，只需幾個小時即可學習。</span><span>最後，可以使用廉價的工具創建和終止雙絞線電纜。</span><span>例如，一套完整的銅線工具套件可以在線購買，價格不到50美元。由於這些原因，一套完整的光纖套件的價格可能在1000美元以上。</span></span></p>
-<p style="text-align: left;">-------------------------------------------------------------------------------------------------------<span>轉換器  </span>Converters</p>
+<p style="text-align: left;">-------------------------------------------------------------------------------------------------------</p>
+<p style="text-align: left;"><span>轉換器  </span>Converters</p>
 <p id="N10678" lang="" style="text-align: left;">Because of the wide variety of cable and connector types, there is sometimes a need to convert from one type of media to another. For example, if you have to make a connection between two LANs in buildings that are located one mile apart, but your network uses Cat 5e, UTP cabling, how can you make that connection? When you look at your routers, you find they only accept RJ-45 connections, but you know that you cannot run a Cat 5e cable more than 100 meters. How can you solve this problem? With a media converter.</p>
 <p id="N1067B" lang="" style="text-align: left;">Using a media converter, you can convert your RJ-45 connection into an ST, SC, or LC fiber connection, as shown in the image below. Then, you run the one-mile fiber cable to the other building, and use a media converter to convert from the ST, SC, or LC fiber connection back to the RJ-45 the other router requires. Because this is a simple, “dumb” device, it simply converts whatever is received on the first media type and repeats it back out the second media type. Common types of media converters are from Ethernet (copper) to fiber-optic (and back) or coaxial to fiber-optic (and back).</p>
 <p id="N10678" lang="" style="text-align: left;"><span>由於電纜和連接器的類型多種多樣，有時需要從一種介質轉換為另一種介質。例如，如果您必須在相距一英里的建築物中的兩個LAN之間建立連接，但是您的網絡使用Cat 5e，UTP電纜，那麼如何建立連接？當您查看路由器時，會發現它們僅接受RJ-45連接，但您知道不能將Cat 5e電纜的長度超過100米。您如何解決這個問題？帶媒體轉換器。</span></p>
 <p id="N1067B" lang="" style="text-align: left;"><span><span>使用媒體轉換器，您可以將RJ-45連接轉換為ST，SC或LC光纖連接，如下圖所示。</span><span>然後，將一英里的光纜連接到另一座建築物，並使用媒體轉換器將ST，SC或LC光纖連接轉換回另一台路由器所需的RJ-45。</span><span>因為這是一個簡單的“啞”設備，所以它僅轉換在第一媒體類型上接收到的所有內容，然後將其重複播放回第二媒體類型。</span><span>媒體轉換器的常見類型是從以太網（銅）到光纖（然後向後）或從同軸電纜到光纖（然後向後）。</span></span></p>
 <span class="imagewrap"><span class="image"><img alt="Photograph of four converters stacked on top of each other. The two converters in the middle are identical. They are each labeled Black Box and have a power cord receptacle, an Ethernet port and two other ports. The converter on the top has an Ethernet port and two other ports. The converter on the bottom has an Ethernet port and two other ports." class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH11/webcontent/PCH11/image11.png" title="Photograph of four converters stacked on top of each other. The two converters in the middle are identical. They are each labeled Black Box and have a power cord receptacle, an Ethernet port and two other ports. The converter on the top has an Ethernet port and two other ports. The converter on the bottom has an Ethernet port and two other ports."/></span><span class="caption" lang=""></span></span>
 <p id="N10683" lang="" style="text-align: center;"><span>媒體轉換器。</span></p>
+<h1 style="text-align: left;">作業進度</h1>
+<p style="text-align: left;">Week              進度目標                           完成進度                </p>
+<p style="text-align: left;"> W1          建立Github倉儲                         已完成</p>
+<p style="text-align: left;"> W2          建立網頁                                    <span>已完成</span></p>
+<p style="text-align: left;"> W3          與組員分配討論HW1內容       <span> </span><span>已完成</span></p>
+<p style="text-align: left;"> W4          建立PC Hardware帳號               <span>已完成</span></p>
+<p style="text-align: left;"> W5          將<span>PC Hardware PCH10              已完成</span></p>
+<p style="text-align: left;"><span> W6           ,PCH11資料完成英翻中            </span></p>
+<p style="text-align: left;">                放至個人網頁                           </p>
+<p style="text-align: left;"></p>
+<p style="text-align: left;"></p>
+<p style="text-align: left;">未來規劃</p>
+<p style="text-align: left;"> W7           完成作業心得</p>
+<h1 style="text-align: left;">About</h1>
+<p style="text-align: left;">此內容管理系統以 <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 作為 submodule 運作, 可以選定對應的版本運作, cmsimde 可以持續改版, 不會影響之前設為 submodule, 使用舊版 cmsimde 模組的內容管理相關運作.</p>
+<h4 style="text-align: left;">利用 cmsimde 建立靜態網誌方法:</h4>
+<p style="text-align: left;">1. 在 github 建立倉儲, git clone 到近端</p>
+<p style="text-align: left;">2. 參考 <a href="https://github.com/mdecourse/newcms">https://github.com/mdecourse/newcms</a>, 加入除了 cmsimde 目錄外的所有內容</p>
+<p style="text-align: left;">以 git submodule add <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> cmsimde</p>
+<p style="text-align: left;">建立 cmsimde 目錄, 並從 github 取下子模組內容.</p>
+<p style="text-align: left;">3.在近端維護時, 更換目錄到倉儲中的 cmsimde, 以 python wsgi.py 啟動近端網際伺服器.</p>
+<p style="text-align: left;">動態內容編輯完成後, 以 generate_pages 轉為靜態內容, 以 git add commit 及 push 將內容推到遠端.</p>
+<p style="text-align: left;">4. 之後若要以 git clone 取下包含 submodule 的所有內容, 執行:</p>
+<p style="text-align: left;">git clone --recurse-submodules<span> </span><a href="https://github.com/mdecourse/newcms.git">https://github.com/mdecourse/newcms.git</a></p>
+<h2 style="text-align: left;">Develop</h2>
+<p style="text-align: left;"><a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 的開發, 可以在一個目錄中放入 cmsimde, 然後將 up_dir 中的內容放到與 cmsimde 目錄同位階的地方, 使用 command 進入 cmsimde 目錄, 執行 python wsgi.py, 就可以啟動, 以瀏覽器 https://localhost:9443 就可以連接, 以 admin 作為管理者密碼, 就可以登入維護內容.</p>
+<p style="text-align: left;">cmsimde 的開發採用 Leo Editor, 開啟 cmsimde 目錄中的 cmsimde.leo 就可以進行程式修改, 結束後, 若要保留網際內容, 只要將 cmsimde 外部的內容倒回 up_dir 目錄中即可後續對 cmsimde 遠端倉儲進行改版.</p>
+<p style="text-align: left;">init.py 位於  up_dir 目錄, 可以設定 site_title 與 uwsgi 等變數.</p>
 </div>
 </div>
 </div>

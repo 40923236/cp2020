@@ -87,6 +87,7 @@ img.add_border {
 </head>
 <body>
 <div class='container'><nav>
+        
     <div class="site-wrap">
 
     <div class="site-mobile-menu">
@@ -132,4 +133,59 @@ img.add_border {
           </div>
           
         </header>
-    </nav><section><h1>Site Map</h1><div id="tipue_search_content"></div><ul><li><a href='HW1.html'>HW1</a><ul><li><a href='PCH10.html'>PCH10</a><li><a href='PCH11.html'>PCH11</a><li><a href='作業心得.html'>作業心得</a></li></ul><li><a href='HW2.html'>HW2</a><ul><li><a href='.html'></a><li><a href='HW2-1.html'>HW2-1</a></li></ul><li><a href='作業進度.html'>作業進度</a><li><a href='About.html'>About</a><ul><li><a href='Develop.html'>Develop</a></li></ul></section></div></body></html>
+    <div id="tipue_search_content"> << <a href='.html'>Previous</a> <a href='作業進度.html'>Next</a> >> 作業進度<br /><h1>HW2-1</h1>
+<pre><span class="c1"># <a href="https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0776">https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0776 </a>#url目標<br/></span></pre>
+<pre><span class="c1">#用以處理url數據庫<br/></span><span class="kn">import</span> <span class="nn"><a name="kln-25"></a><a class="indexed_symbol local_indexed_symbol" onclick="parent.postMessage({'referent':'.kaggle.usercode.12220899.44629092.urllib'}, '*')">urllib</a>.request<br/></span><span class="c1"><br/></span><span class="n"><a name="kln-26"></a><a class="indexed_symbol local_indexed_symbol" onclick="parent.postMessage({'referent':'.kaggle.usercode.12220899.44629092.target_url'}, '*')">target_url</a></span> <span class="o">=</span> <span class="s2">"https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0776" </span>#指定目標位置<br/><br/><span class="n"><a name="kln-27"></a><a class="indexed_symbol local_indexed_symbol" onclick="parent.postMessage({'referent':'.kaggle.usercode.12220899.44629092.cp1a'}, '*')">cp1b</a></span> <span class="o">=</span> <span class="p">[]</span> <br/><span class="k">for</span> <span class="n"><a name="kln-28"></a><a class="indexed_symbol local_indexed_symbol" onclick="parent.postMessage({'referent':'.kaggle.usercode.12220899.44629092.line'}, '*')">line</a></span> <span class="ow">in</span> <span class="n"><a class="indexed_symbol local_indexed_symbol" onclick="parent.postMessage({'referent':'.kaggle.usercode.12220899.44629092.urllib'}, '*')">urllib</a></span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n"><a class="indexed_symbol local_indexed_symbol" onclick="parent.postMessage({'referent':'.kaggle.usercode.12220899.44629092.target_url'}, '*')">target_url</a></span><span class="p">): #打開目標網頁地址<br/><br/></span><span class="c1">#利用 int() 將字串內容轉換為整數字串<br/>#(</span><span class="n"><a class="indexed_symbol local_indexed_symbol" onclick="parent.postMessage({'referent':'.kaggle.usercode.12220899.44629092.line'}, '*')">line</a></span><span class="o">.</span><span class="n"><a class="indexed_symbol global_indexed_symbol" onclick="parent.postMessage({'referent':'.root.indexer-src.typeshed.stdlib.2and3.builtins.object.decode'}, '*')">decode)將字串用指定方式解碼<br/></a></span><span class="c1">#(</span><span class="s1">utf-8)解碼方式<br/></span><span class="n"><a name="kln-30"></a><a class="indexed_symbol local_indexed_symbol" onclick="parent.postMessage({'referent':'.kaggle.usercode.12220899.44629092.cp1a'}, '*')">cp1b</a></span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb"><a class="indexed_symbol global_indexed_symbol" onclick="parent.postMessage({'referent':'.root.indexer-src.typeshed.stdlib.2and3.builtins.int'}, '*')">int</a></span><span class="p">(</span><span class="n"><a class="indexed_symbol local_indexed_symbol" onclick="parent.postMessage({'referent':'.kaggle.usercode.12220899.44629092.line'}, '*')">line</a></span><span class="o">.</span><span class="n"><a class="indexed_symbol global_indexed_symbol" onclick="parent.postMessage({'referent':'.root.indexer-src.typeshed.stdlib.2and3.builtins.object.decode'}, '*')">decode</a></span><span class="p">(</span><span class="s1">'utf-8'</span><span class="p">)</span><span class="o">.</span><span class="n"><a class="indexed_symbol global_indexed_symbol" onclick="parent.postMessage({'referent':'.root.indexer-src.typeshed.stdlib.2and3.builtins.object.rstrip'}, '*')">rstrip</a></span><span class="p">()))<br/><br/></span><span class="c1">#輸出(line.decode('utf-8'), end = "") #utf-8或iso8859-1 或任何編碼方式<br/></span><span class="nb"><a name="kln-32"></a><a class="indexed_symbol global_indexed_symbol" onclick="parent.postMessage({'referent':'.root.indexer-src.typeshed.stdlib.2and3.builtins.print'}, '*')">print</a></span><span class="p">(</span><span class="n"><a class="indexed_symbol local_indexed_symbol" onclick="parent.postMessage({'referent':'.kaggle.usercode.12220899.44629092.cp1a'}, '*')">cp1b</a></span><span class="p">) #輸出結果</span></pre>
+<pre><span class="p"> </span></pre>
+<p><span>執行結果</span></p>
+<p style="text-align: left;"><img alt="" height="648" src="./../images/123.png" width="1913"/></p><br /> << <a href='.html'>Previous</a> <a href='作業進度.html'>Next</a> >> 作業進度</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        

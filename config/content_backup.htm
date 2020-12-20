@@ -563,9 +563,53 @@ print(divisorList)<br/><br/></pre>
 <p>Sample Solution 示範解答</p>
 <p>Here is a sample solution from a reader that uses the solutions to Parts 1 and 2, and just puts them on one file:</p>
 <p><span>這是來自讀者的示例解決方案，使用了第1部分和第2部分的解決方案，並將它們放在一個文件中：</span></p>
-<p>import random def choose_random_word(): words=[] with open('sowpods.txt', 'r') as file: line = file.readline() while line: words.append(line.replace("\n","".strip())) line = file.readline() choice=words[random.randint(0,len(words)-1)] return choice print("Welcome to Hangman!") secret_word=choose_random_word() dashes=list(secret_word) display_list=[] for i in dashes: display_list.append("_") count=len(secret_word) guesses=0 letter = 0 used_list=[] while count != 0 and letter != "exit": print(" ".join(display_list)) letter=input("Guess your letter: ") if letter.upper() in used_list: print("Oops! Already guessed that letter.") else: for i in range(0,len(secret_word)): if letter.upper() == secret_word[i]: display_list[i]=letter.upper() count -= 1 guesses +=1 used_list.append(letter.upper()) if letter == "exit": print("Thanks!") else: print(" ".join(display_list)) print("Good job! You figured that the word is "+secret_word+" after guessing %s letters!" % guesses)<br/><br/><br/></p>
-<p><br/><br/><br/></p>
-<h2><span>35:Birthday Months 生日月份</span></h2>
+<pre>import random
+
+def choose_random_word():
+    words=[]
+    with open('sowpods.txt', 'r') as file:
+        line = file.readline()
+        while line:
+            words.append(line.replace("\n","".strip()))
+            line = file.readline()
+    choice=words[random.randint(0,len(words)-1)]
+    return choice
+
+
+
+
+
+print("Welcome to Hangman!")
+secret_word=choose_random_word()
+dashes=list(secret_word)
+display_list=[]
+for i in dashes:
+    display_list.append("_")
+count=len(secret_word)
+guesses=0
+letter = 0
+used_list=[]
+while count != 0 and letter != "exit":
+    print(" ".join(display_list))
+    letter=input("Guess your letter: ")
+
+    if letter.upper() in used_list:
+        print("Oops! Already guessed that letter.")
+    else:
+        for i in range(0,len(secret_word)):
+            if letter.upper() == secret_word[i]:
+                display_list[i]=letter.upper()
+                count -= 1
+        guesses +=1
+    used_list.append(letter.upper())
+
+if letter == "exit":
+    print("Thanks!")
+else:
+    print(" ".join(display_list))
+    print("Good job! You figured that the word is "+secret_word+" after guessing %s letters!" % guesses)</pre>
+<p><br/><br/></p>
+<p><br/><br/><br/></p><h2>35:Birthday Months 生日月份</h2>
 <div>Exercise 35 (練習35)<br/><i></i></div>
 <p><em><span>此練習是生日數據練習系列4的第3部分。其他練習是：</span><a href="https://www.practicepython.org/exercise/2017/01/24/33-birthday-dictionaries.html"><span>第1部分</span></a><span>，</span><a href="https://www.practicepython.org/exercise/2017/02/06/34-birthday-json.html"><span>第2</span></a><span></span><a href="https://www.practicepython.org/exercise/2017/04/02/36-birthday-plots.html"><span>部分</span></a><span>和<a href="https://www.practicepython.org/exercise/2017/04/02/36-birthday-plots.html">第4部分</a>。</span></em></p>
 <p><span><span>在上</span></span><a href="https://www.practicepython.org/exercise/2017/02/06/34-birthday-json.html"><span><span>一個練習中，</span></span></a><span><span>我們將有關著名科學家的姓名和生日的信息保存到磁盤上。</span><span>在本練習中，從磁盤加載該JSON文件，提取所有生日的月份，併計算每個月有多少科學家生日。</span></span></p>

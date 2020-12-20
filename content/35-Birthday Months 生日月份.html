@@ -1,0 +1,269 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>40923236 cp2020</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">40923236 cp2020</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li class='has-children'><a href='HW1.html'>HW1</a><ul class='dropdown'><li><a href='PCH10.html'>PCH10</a><li><a href='PCH11.html'>PCH11</a></li></ul><li class='has-children'><a href='HW2.html'>HW2</a><ul class='dropdown'><li><a href='HW2-1.html'>HW2-1</a></li></ul><li class='has-children'><a href='HW3.html'>HW3</a><ul class='dropdown'><li><a href='4-Divisors除數.html'>4-Divisors除數</a><li><a href='32-Hangman.html'>32-Hangman</a><li><a href='35-Birthday Months 生日月份.html'>35-Birthday Months 生日月份</a></li></ul><li><a href='作業進度.html'>作業進度</a><li><a href='About.html'>About</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">32-Hangman << <a href='32-Hangman.html'>Previous</a> <a href='作業進度.html'>Next</a> >> 作業進度<br /><h1>35-Birthday Months 生日月份</h1>
+<div style="text-align: left;">Exercise 35 (練習35)<br/><i></i></div>
+<p style="text-align: left;"><em><span>此練習是生日數據練習系列4的第3部分。其他練習是：</span><a href="https://www.practicepython.org/exercise/2017/01/24/33-birthday-dictionaries.html"><span>第1部分</span></a><span>，</span><a href="https://www.practicepython.org/exercise/2017/02/06/34-birthday-json.html"><span>第2</span></a><span></span><a href="https://www.practicepython.org/exercise/2017/04/02/36-birthday-plots.html"><span>部分</span></a><span>和<a href="https://www.practicepython.org/exercise/2017/04/02/36-birthday-plots.html">第4部分</a>。</span></em></p>
+<p style="text-align: left;"><span><span>在上</span></span><a href="https://www.practicepython.org/exercise/2017/02/06/34-birthday-json.html"><span><span>一個練習中，</span></span></a><span><span>我們將有關著名科學家的姓名和生日的信息保存到磁盤上。</span><span>在本練習中，從磁盤加載該JSON文件，提取所有生日的月份，併計算每個月有多少科學家生日。</span></span></p>
+<p style="text-align: left;"><span><span>您的程序應輸出如下內容：</span></span></p>
+<p style="text-align: left;"><em>This exercise is Part 3 of 4 of the birthday data exercise series. The other exercises are:<span> </span><a href="https://www.practicepython.org/exercise/2017/01/24/33-birthday-dictionaries.html">Part 1</a>,<span> </span><a href="https://www.practicepython.org/exercise/2017/02/06/34-birthday-json.html">Part 2</a>, and<span> </span><a href="https://www.practicepython.org/exercise/2017/04/02/36-birthday-plots.html">Part 4</a>.</em></p>
+<p style="text-align: left;">In the<span> </span><a href="https://www.practicepython.org/exercise/2017/02/06/34-birthday-json.html">previous exercise</a><span> </span>we saved information about famous scientists’ names and birthdays to disk. In this exercise, load that JSON file from disk, extract the months of all the birthdays, and count how many scientists have a birthday in each month.</p>
+<p style="text-align: left;">Your program should output something like:</p>
+<figure class="highlight" style="text-align: left;">
+<pre><code class="language-python" data-lang="python"><span class="p">{</span>
+	<span class="s">"May"</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+	<span class="s">"November"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+	<span class="s">"December"</span><span class="p">:</span> <span class="mi">1</span>
+<span class="p">}<br/><br/><br/></span></code></pre>
+</figure>
+<p style="text-align: left;">Discussion(討論區)</p>
+<p style="text-align: left;"><span>您已經具有使用我們已經介紹的概念完成此練習的技能：</span><a href="https://www.practicepython.org/exercise/2014/02/15/03-list-less-than-ten.html"><span>for循環</span></a><span>，</span><a href="https://www.practicepython.org/exercise/2014/12/06/22-read-from-file.html"><span>字典</span></a><span>和基本算術。但是，我想談談稱為的Python內置函數</span><code class="highlighter-rouge">Counter</code><span>。</span></p>
+<p style="text-align: left;"><code class="highlighter-rouge"><span face="Verdana, Arial, Helvetica, sans-serif" style="font-family: Verdana, Arial, Helvetica, sans-serif;">從</span><a href="https://docs.python.org/3/library/collections.html#collections.Counter">Counter</a></code><span><span>獲取一個列表，併計算列表中每個元素的數量。</span><span>要使用計數器，請先從中導入</span></span><code class="highlighter-rouge">collections</code><span><span>：</span></span></p>
+<p style="text-align: left;"><span><span></span></span></p>
+<figure class="highlight" style="text-align: left;"></figure>
+<p style="text-align: left;"><span><span></span></span></p>
+<p style="text-align: left;">You already have the skills to achieve this exercise with concepts we’ve already covered:<span> </span><a href="https://www.practicepython.org/exercise/2014/02/15/03-list-less-than-ten.html">for loops</a>,<span> </span><a href="https://www.practicepython.org/exercise/2014/12/06/22-read-from-file.html">dictionaries</a>, and basic arithmetic. However, I want to talk about a Python built-in called a<span> </span><code class="highlighter-rouge">Counter</code>.</p>
+<p style="text-align: left;">A<span> </span><a href="https://docs.python.org/3/library/collections.html#collections.Counter"><code class="highlighter-rouge">Counter</code></a><span> </span>takes a list and counts how many of each element were in the list. To use the Counter, first import it from<span> </span><code class="highlighter-rouge">collections</code>:</p>
+<p style="text-align: left;"></p>
+<figure class="highlight" style="text-align: left;">
+<pre><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">Counter<br/><br/></span></code></pre>
+</figure>
+<p style="text-align: left;"><span>這使您可以</span><code class="highlighter-rouge">Counter</code><span>在程序中使用Python內置的數據結構。然後，給它一個清單：</span></p>
+<p style="text-align: left;">This lets you use the<span> </span><code class="highlighter-rouge">Counter</code><span> </span>data structure built into Python in your program. Then, give it a list:</p>
+<p style="text-align: left;"></p>
+<figure class="highlight" style="text-align: left;">
+<pre><code class="language-python" data-lang="python"><span class="n">sandwiches</span> <span class="o">=</span> <span class="p">[</span><span class="s">"ham"</span><span class="p">,</span> <span class="s">"cheese"</span><span class="p">,</span> <span class="s">"roast beef"</span><span class="p">,</span> <span class="s">"ham"</span><span class="p">,</span> <span class="s">"cheese"</span><span class="p">,</span> <span class="s">"roast beef"</span><span class="p">,</span> <span class="s">"ham"</span><span class="p">]</span>
+<span class="n">c</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">(</span><span class="n">sandwiches</span><span class="p">)<br/><br/></span></code></pre>
+</figure>
+<p style="text-align: left;"><span>如果是</span><code class="highlighter-rouge">print(c)</code><span><span>，您將看到以下內容：</span></span></p>
+<p style="text-align: left;">If you<span> </span><code class="highlighter-rouge">print(c)</code>, you will see this:</p>
+<p style="text-align: left;"></p>
+<figure class="highlight" style="text-align: left;">
+<pre><code class="language-python" data-lang="python"><span class="n">Counter</span><span class="p">({</span><span class="s">"ham"</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s">"roast beef"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s">"cheese"</span><span class="p">:</span> <span class="mi">2</span><span class="p">})</span></code></pre>
+</figure>
+<p style="text-align: left;"><span></span></p>
+<p style="text-align: left;"><span>這意味著我的列表中有3個</span><code class="highlighter-rouge">ham</code><span><span>，2個</span></span><code class="highlighter-rouge">roast beef</code><span><span>和2個</span></span><code class="highlighter-rouge">cheese</code><span><span>三明治。</span><span>我可以直接從中獲取此信息</span></span><code class="highlighter-rouge">Counter</code><span><span>：</span></span></p>
+<p style="text-align: left;">This means there are 3<span> </span><code class="highlighter-rouge">ham</code>, 2<span> </span><code class="highlighter-rouge">roast beef</code>, and 2<span> </span><code class="highlighter-rouge">cheese</code><span> </span>sandwiches in my list. I can get this information directly from the<span> </span><code class="highlighter-rouge">Counter</code>:</p>
+<p style="text-align: left;"></p>
+<figure class="highlight" style="text-align: left;">
+<pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="s">"There are {} ham sandwiches"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">c</span><span class="p">[</span><span class="s">"ham"</span><span class="p">]))</span>
+<span class="n">There</span> <span class="n">are</span> <span class="mi">3</span> <span class="n">ham</span> <span class="n">sandwiches<br/></span></code></pre>
+</figure>
+<p style="text-align: left;"><span></span></p>
+<p style="text-align: left;"><span>希望這是有用的！</span></p>
+<p style="text-align: left;">Hope this is useful!</p>
+<p style="text-align: left;"></p>
+<p style="text-align: left;"><span>Birthday Months Solutions 生日月份解決方案</span></p>
+<p style="text-align: left;"><span></span></p>
+<p style="text-align: left;"><span><em>This exercise is Part 3 of 4 of the birthday data exercise series. The other exercises are: <a href="https://www.practicepython.org/exercise/2017/01/24/33-birthday-dictionaries.html">Part 1</a>, <a href="https://www.practicepython.org/exercise/2017/02/06/34-birthday-json.html">Part 2</a>, and <a href="https://www.practicepython.org/exercise/2017/04/02/36-birthday-plots.html">Part 4</a>.</em></span></p>
+<p style="text-align: left;"><em><span>此練習是生日數據練習系列4的第3部分。其他練習是：</span><a href="https://www.practicepython.org/exercise/2017/01/24/33-birthday-dictionaries.html"><span>第1部分</span></a><span>，</span><a href="https://www.practicepython.org/exercise/2017/02/06/34-birthday-json.html"><span>第2</span></a><span></span><a href="https://www.practicepython.org/exercise/2017/04/02/36-birthday-plots.html"><span>部分</span></a><span>和<a href="https://www.practicepython.org/exercise/2017/04/02/36-birthday-plots.html">第4部分</a>。</span></em></p>
+<p style="text-align: left;"><em><span></span></em></p>
+<p style="text-align: left;"><em><span>In the <a href="https://www.practicepython.org/exercise/2017/02/06/34-birthday-json.html">previous exercise</a><span><span> </span>we saved information about famous scientists’ names and birthdays to disk. In this exercise, load that JSON file from disk, extract the months of all the birthdays, and count how many scientists have a birthday in each month.</span></span></em></p>
+<p style="text-align: left;"><span><span>在上</span></span><a href="https://www.practicepython.org/exercise/2017/02/06/34-birthday-json.html"><span><span>一個練習中，</span></span></a><span><span>我們將有關著名科學家的姓名和生日的信息保存到磁盤上。</span><span>在本練習中，從磁盤加載該JSON文件，提取所有生日的月份，併計算每個月有多少科學家生日。</span></span></p>
+<p style="text-align: left;"><span><span></span></span></p>
+<p style="text-align: left;"><span><span>Your program should output something like:</span></span></p>
+<p style="text-align: left;"><span><span>您的程序應輸出如下內容：</span></span></p>
+<figure class="highlight" style="text-align: left;">
+<pre><code class="language-python" data-lang="python"><span class="p">{</span>
+	<span class="s">"May"</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+	<span class="s">"November"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+	<span class="s">"December"</span><span class="p">:</span> <span class="mi">1</span>
+<span class="p">}</span></code></pre>
+</figure>
+<p style="text-align: left;">Solution <span><span>解決方案</span></span></p>
+<p style="text-align: left;"><span><span>Here is one reader solution using built-in Counters. This reader’s solution did not specify what kind of format the months have to be in, but as you can see from their use of <code class="highlighter-rouge">x.split()[0]</code><span><span> </span>to extract the months that they expect the month format to be of the type “May 5, 2010”.</span></span></span></p>
+<p style="text-align: left;"><span><span>這是一個使用內置計數器的讀者解決方案。</span><span>該讀者的解決方案未指定月份必須採用哪種格式，但是從他們的使用中可以看出，他們</span></span><code class="highlighter-rouge">x.split()[0]</code><span><span>提取月份時希望他們的月份格式為“ 2010年5月5日”。</span></span></p>
+<pre>import json
+from collections import Counter
+
+month = []
+
+with open("info.json", "r") as f:
+    birthdays = json.load(f)
+
+for x in birthdays.values():
+    month.append(x.split()[0])
+
+print(Counter(month))</pre><br />32-Hangman << <a href='32-Hangman.html'>Previous</a> <a href='作業進度.html'>Next</a> >> 作業進度</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        

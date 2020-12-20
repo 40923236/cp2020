@@ -337,8 +337,6 @@
 <p lang=""><span>共有三種主要的同軸電纜類型。</span><span>有線電視公司通常使用RG-6將單個房屋連接到電視網絡。</span><span>這些電纜很粗，通常用於外部連接以承受天氣的影響。</span><span>RG-58是一種同軸電纜，在諸如總線和環形拓撲之類的早期10Base2（瘦網）網絡中大量使用。</span><span>最後，RG-59是傳統的同軸電纜，用於在兩個附近的設備（例如電視和電纜盒）之間傳送複合視頻。</span><span>如果您是有線Internet用戶，這也可用於將WAN連接從牆壁插孔連接到電纜調製解調器。</span></p>
 </div>
 </div>
-<div class="section" id="N106AE">
-<div class="sectionContain" style="text-align: center;">
 <p lang="" style="text-align: left;"><span>同軸電纜連接器  Coaxial Cable Connectors</span></p>
 <p id="N106B5" lang="" style="text-align: left;">While there were three types of cables, there are only two types of common connectors used with coaxial cable. The first is called BNC, from the name Bayonet Neill-Concelman. Sometimes people also call this the British Naval connector, because the BNC was heavily used by the British in their shipboard radio systems. This connector was commonly used in early Ethernet networks and it has a “push and twist” type of connector to secure the cable to the network device.</p>
 <p id="N106B8" lang="" style="text-align: left;">The F-type connector is the modern type of coaxial cable connector. It is typically used for cable TV and cable modem connections. It is connected by screwing the connector onto a threaded jack to secure the connection.</p>
@@ -357,51 +355,51 @@
 <p id="N1067B" lang="" style="text-align: left;"><span><span>使用媒體轉換器，您可以將RJ-45連接轉換為ST，SC或LC光纖連接，如下圖所示。</span><span>然後，將一英里的光纜連接到另一座建築物，並使用媒體轉換器將ST，SC或LC光纖連接轉換回另一台路由器所需的RJ-45。</span><span>因為這是一個簡單的“啞”設備，所以它僅轉換在第一媒體類型上接收到的所有內容，然後將其重複播放回第二媒體類型。</span><span>媒體轉換器的常見類型是從以太網（銅）到光纖（然後向後）或從同軸電纜到光纖（然後向後）。</span></span></p>
 <span class="imagewrap"><span class="image"><img alt="Photograph of four converters stacked on top of each other. The two converters in the middle are identical. They are each labeled Black Box and have a power cord receptacle, an Ethernet port and two other ports. The converter on the top has an Ethernet port and two other ports. The converter on the bottom has an Ethernet port and two other ports." class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH11/webcontent/PCH11/image11.png" title="Photograph of four converters stacked on top of each other. The two converters in the middle are identical. They are each labeled Black Box and have a power cord receptacle, an Ethernet port and two other ports. The converter on the top has an Ethernet port and two other ports. The converter on the bottom has an Ethernet port and two other ports."/></span><span class="caption" lang=""></span></span>
 <p id="N10683" lang="" style="text-align: center;"><span>媒體轉換器。</span></p>
-<h2>作業心得</h2>
+作業心得
 <p style="text-align: left;">利用各種對電腦硬體的知識，可以使我們利用這些設備來進行電腦的操作。也會認識網際網路的運作、電腦與電腦間資料運送會經過哪些設備，而這些設備的功能又分別是什麼。而網路間用以傳遞的介質有有哪些，這些介質的優缺點又是什麼。利用這些知識，可以瞭解電腦與網路的運作，使我們遇到相關問題時有個解決的方法。</p>
-<h1>HW2</h1>
+<h1 style="text-align: left;">HW2</h1>
 <p style="text-align: left;">Kaggle W8</p>
 <p style="text-align: left;"><a href="https://www.kaggle.com/cp202040923236/cp2020w8">https://www.kaggle.com/cp202040923236/cp2020w8</a></p>
-<h2>HW2-1</h2>
+HW2-1
 <pre><span class="c1"># <a href="https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0776">https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0776 </a>#url目標<br/></span></pre>
 <pre><span class="c1">#用以處理url數據庫<br/></span><span class="kn">import</span> <span class="nn"><a name="kln-25"></a><a class="indexed_symbol local_indexed_symbol" onclick="parent.postMessage({'referent':'.kaggle.usercode.12220899.44629092.urllib'}, '*')">urllib</a>.request<br/></span><span class="c1"><br/></span><span class="n"><a name="kln-26"></a><a class="indexed_symbol local_indexed_symbol" onclick="parent.postMessage({'referent':'.kaggle.usercode.12220899.44629092.target_url'}, '*')">target_url</a></span> <span class="o">=</span> <span class="s2">"https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0776" </span>#指定目標位置<br/><br/><span class="n"><a name="kln-27"></a><a class="indexed_symbol local_indexed_symbol" onclick="parent.postMessage({'referent':'.kaggle.usercode.12220899.44629092.cp1a'}, '*')">cp1b</a></span> <span class="o">=</span> <span class="p">[]</span> <br/><span class="k">for</span> <span class="n"><a name="kln-28"></a><a class="indexed_symbol local_indexed_symbol" onclick="parent.postMessage({'referent':'.kaggle.usercode.12220899.44629092.line'}, '*')">line</a></span> <span class="ow">in</span> <span class="n"><a class="indexed_symbol local_indexed_symbol" onclick="parent.postMessage({'referent':'.kaggle.usercode.12220899.44629092.urllib'}, '*')">urllib</a></span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n"><a class="indexed_symbol local_indexed_symbol" onclick="parent.postMessage({'referent':'.kaggle.usercode.12220899.44629092.target_url'}, '*')">target_url</a></span><span class="p">): #打開目標網頁地址<br/><br/></span><span class="c1">#利用 int() 將字串內容轉換為整數字串<br/>#(</span><span class="n"><a class="indexed_symbol local_indexed_symbol" onclick="parent.postMessage({'referent':'.kaggle.usercode.12220899.44629092.line'}, '*')">line</a></span><span class="o">.</span><span class="n"><a class="indexed_symbol global_indexed_symbol" onclick="parent.postMessage({'referent':'.root.indexer-src.typeshed.stdlib.2and3.builtins.object.decode'}, '*')">decode)將字串用指定方式解碼<br/></a></span><span class="c1">#(</span><span class="s1">utf-8)解碼方式<br/></span><span class="n"><a name="kln-30"></a><a class="indexed_symbol local_indexed_symbol" onclick="parent.postMessage({'referent':'.kaggle.usercode.12220899.44629092.cp1a'}, '*')">cp1b</a></span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb"><a class="indexed_symbol global_indexed_symbol" onclick="parent.postMessage({'referent':'.root.indexer-src.typeshed.stdlib.2and3.builtins.int'}, '*')">int</a></span><span class="p">(</span><span class="n"><a class="indexed_symbol local_indexed_symbol" onclick="parent.postMessage({'referent':'.kaggle.usercode.12220899.44629092.line'}, '*')">line</a></span><span class="o">.</span><span class="n"><a class="indexed_symbol global_indexed_symbol" onclick="parent.postMessage({'referent':'.root.indexer-src.typeshed.stdlib.2and3.builtins.object.decode'}, '*')">decode</a></span><span class="p">(</span><span class="s1">'utf-8'</span><span class="p">)</span><span class="o">.</span><span class="n"><a class="indexed_symbol global_indexed_symbol" onclick="parent.postMessage({'referent':'.root.indexer-src.typeshed.stdlib.2and3.builtins.object.rstrip'}, '*')">rstrip</a></span><span class="p">()))<br/><br/></span><span class="c1">#輸出(line.decode('utf-8'), end = "") #utf-8或iso8859-1 或任何編碼方式<br/></span><span class="nb"><a name="kln-32"></a><a class="indexed_symbol global_indexed_symbol" onclick="parent.postMessage({'referent':'.root.indexer-src.typeshed.stdlib.2and3.builtins.print'}, '*')">print</a></span><span class="p">(</span><span class="n"><a class="indexed_symbol local_indexed_symbol" onclick="parent.postMessage({'referent':'.kaggle.usercode.12220899.44629092.cp1a'}, '*')">cp1b</a></span><span class="p">) #輸出結果</span></pre>
 <pre><span class="p"> </span></pre>
-<p><span>執行結果</span></p>
+<p style="text-align: left;"><span>執行結果</span></p>
 <p style="text-align: left;"><img alt="" height="648" src="/images/123.png" width="1913"/></p>
-<h1>HW3</h1>
-<p>作業3:個人分配範圍</p>
-<ul>
+<h1 style="text-align: left;">HW3</h1>
+<p style="text-align: left;">作業3:個人分配範圍</p>
+<ul style="text-align: left;">
 <li>4:<span> </span><a href="https://www.practicepython.org/exercise/2014/02/26/04-divisors.html">Divisors</a><span> </span></li>
 <li><span>32:<span> </span><a href="https://www.practicepython.org/exercise/2017/01/10/32-hangman.html">Hangman</a><span> </span></span></li>
-<li><span><span>35:<span> </span><a href="https://www.practicepython.org/exercise/2017/02/28/35-birthday-months.html">Birthday Months</a></span></span><span><span></span></span><span><span></span></span></li>
+<li><span><span>35:<span> </span><a href="https://www.practicepython.org/exercise/2017/02/28/35-birthday-months.html">Birthday Months</a></span></span><span><span></span></span><span><span></span></span><span><span></span></span></li>
 </ul>
-<h2>4:Divisors除數</h2>
-<p>Exercise 4(<span>練習4)</span></p>
-<p><span>Create a program that asks the user for a number and then prints out a list of all the divisors of that number. (If you don’t know what a <em>divisor</em><span><span> </span>is, it is a number that divides evenly into another number. For example, 13 is a divisor of 26 because 26 / 13 has no remainder.)</span></span></p>
-<p><span><span>創建一個程序，詢問用戶一個數字，然後打印出該數字的所有除數的列表。（如果您不知道</span><em><span><span>除數</span></span></em><span><span>是多少，它是一個平均除以另一個數的數字。例如，13是26的除數，因為26/13沒有餘數。）</span></span></span></p>
-<p><span><span><span></span></span></span></p>
-<p>Discussion<span>(討論區)</span></p>
-<p>The topics that you need for this exercise combine lists, conditionals, and user input. There is a new concept of creating lists.</p>
-<p>There is an easy way to programmatically create lists of numbers in Python.</p>
-<p>To create a list of numbers from 2 to 10, just use the following code:</p>
-<p><span><span>本練習需要的主題包括列表，條件和用戶輸入。</span><span>有一個創建列表的新概念。</span></span></p>
-<p><span><span>有一種簡便的方法可以在Python中以編程方式創建數字列表。</span></span></p>
-<p><span><span>要創建2到10的數字列表，只需使用以下代碼：</span></span></p>
-<p><span><span></span></span></p>
-<figure class="highlight">
+4:Divisors除數
+<p style="text-align: left;">Exercise 4(<span>練習4)</span></p>
+<p style="text-align: left;"><span>Create a program that asks the user for a number and then prints out a list of all the divisors of that number. (If you don’t know what a <em>divisor</em><span><span> </span>is, it is a number that divides evenly into another number. For example, 13 is a divisor of 26 because 26 / 13 has no remainder.)</span></span></p>
+<p style="text-align: left;"><span><span>創建一個程序，詢問用戶一個數字，然後打印出該數字的所有除數的列表。（如果您不知道</span><em><span><span>除數</span></span></em><span><span>是多少，它是一個平均除以另一個數的數字。例如，13是26的除數，因為26/13沒有餘數。）</span></span></span></p>
+<p style="text-align: left;"><span><span><span></span></span></span></p>
+<p style="text-align: left;">Discussion<span>(討論區)</span></p>
+<p style="text-align: left;">The topics that you need for this exercise combine lists, conditionals, and user input. There is a new concept of creating lists.</p>
+<p style="text-align: left;">There is an easy way to programmatically create lists of numbers in Python.</p>
+<p style="text-align: left;">To create a list of numbers from 2 to 10, just use the following code:</p>
+<p style="text-align: left;"><span><span>本練習需要的主題包括列表，條件和用戶輸入。</span><span>有一個創建列表的新概念。</span></span></p>
+<p style="text-align: left;"><span><span>有一種簡便的方法可以在Python中以編程方式創建數字列表。</span></span></p>
+<p style="text-align: left;"><span><span>要創建2到10的數字列表，只需使用以下代碼：</span></span></p>
+<p style="text-align: left;"><span><span></span></span></p>
+<figure class="highlight" style="text-align: left;">
 <pre><code class="language-python" data-lang="python">  <span class="n">x</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">11</span><span class="p">)<br/></span></code></pre>
 </figure>
-<p><span><span></span></span></p>
-<p><span><span>Then the variable <code class="highlighter-rouge">x</code><span><span> </span>will contain the list<span> </span></span><code class="highlighter-rouge">[2, 3, 4, 5, 6, 7, 8, 9, 10]</code><span>. Note that the second number in the<span> </span></span><code class="highlighter-rouge">range()</code><span><span> </span>function is not included in the original list.</span></span></span></p>
-<p><span><span>然後，變量</span></span><code class="highlighter-rouge">x</code><span><span>將包含列表</span></span><code class="highlighter-rouge">[2, 3, 4, 5, 6, 7, 8, 9, 10]</code><span><span>。</span><span>請注意，</span></span><code class="highlighter-rouge">range()</code><span><span>函數</span><span>中的第二個數字</span><span>不包括在原始列表中。</span></span></p>
-<p><span><span>Now that <code class="highlighter-rouge">x</code><span><span> </span>is a list of numbers, the same for loop can be used with the list:</span></span></span></p>
-<p><span><span>現在這</span></span><code class="highlighter-rouge">x</code><span><span>是一個數字列表，該列表可以使用相同的for循環：</span></span></p>
-<figure class="highlight">
+<p style="text-align: left;"><span><span></span></span></p>
+<p style="text-align: left;"><span><span>Then the variable <code class="highlighter-rouge">x</code><span><span> </span>will contain the list<span> </span></span><code class="highlighter-rouge">[2, 3, 4, 5, 6, 7, 8, 9, 10]</code><span>. Note that the second number in the<span> </span></span><code class="highlighter-rouge">range()</code><span><span> </span>function is not included in the original list.</span></span></span></p>
+<p style="text-align: left;"><span><span>然後，變量</span></span><code class="highlighter-rouge">x</code><span><span>將包含列表</span></span><code class="highlighter-rouge">[2, 3, 4, 5, 6, 7, 8, 9, 10]</code><span><span>。</span><span>請注意，</span></span><code class="highlighter-rouge">range()</code><span><span>函數</span><span>中的第二個數字</span><span>不包括在原始列表中。</span></span></p>
+<p style="text-align: left;"><span><span>Now that <code class="highlighter-rouge">x</code><span><span> </span>is a list of numbers, the same for loop can be used with the list:</span></span></span></p>
+<p style="text-align: left;"><span><span>現在這</span></span><code class="highlighter-rouge">x</code><span><span>是一個數字列表，該列表可以使用相同的for循環：</span></span></p>
+<figure class="highlight" style="text-align: left;">
 <pre><code class="language-python" data-lang="python">  <span class="k">for</span> <span class="n">elem</span> <span class="ow">in</span> <span class="n">x</span><span class="p">:</span> 
     <span class="k">print</span> <span class="n">elem</span></code></pre>
 </figure>
-<p><span><span>將產生結果：</span></span></p>
-<figure class="highlight">
+<p style="text-align: left;"><span><span>將產生結果：</span></span></p>
+<figure class="highlight" style="text-align: left;">
 <pre><code class="language-pycon" data-lang="pycon">  2
   3
   4
@@ -412,9 +410,9 @@
   9
   10<br/><br/></code></pre>
 </figure>
-<p><span><span>Divisors Solutions(解決方案)</span></span></p>
-<p><span><span>Create a program that asks the user for a number and then prints out a list of all the divisors of that number. (If you don’t know what a <em>divisor</em><span><span> </span>is, it is a number that divides evenly into another number. For example, 13 is a divisor of 26 because 26 / 13 has no remainder.)</span></span></span></p>
-<p><span><span><span><span>創建一個程序，詢問用戶一個數字，然後打印出該數字的所有除數的列表。（如果您不知道</span><em><span><span>除數</span></span></em><span><span>是多少，它是一個平均除以另一個數的數字。例如，13是26的除數，因為26/13沒有餘數。）</span></span></span></span></span></p>
+<p style="text-align: left;"><span><span>Divisors Solutions(解決方案)</span></span></p>
+<p style="text-align: left;"><span><span>Create a program that asks the user for a number and then prints out a list of all the divisors of that number. (If you don’t know what a <em>divisor</em><span><span> </span>is, it is a number that divides evenly into another number. For example, 13 is a divisor of 26 because 26 / 13 has no remainder.)</span></span></span></p>
+<p style="text-align: left;"><span><span><span><span>創建一個程序，詢問用戶一個數字，然後打印出該數字的所有除數的列表。（如果您不知道</span><em><span><span>除數</span></span></em><span><span>是多少，它是一個平均除以另一個數的數字。例如，13是26的除數，因為26/13沒有餘數。）</span></span></span></span></span></p>
 <pre>__author__ = 'jeffreyhunt'
 
 num = int(input("Please choose a number to divide: "))
@@ -428,70 +426,70 @@ for number in listRange:
         divisorList.append(number)
 
 print(divisorList)<br/><br/></pre>
-<p>There were a number of tricky things with this exercise. First, the type conversions between input strings and integers for the<span> </span><code class="highlighter-rouge">range()</code><span> </span>function need to be carefully output. Second, the arguments to<span> </span><code class="highlighter-rouge">range()</code><span> </span>had to be carefully constructed to cover all the possible numbers. Third, the condition in the<span> </span><code class="highlighter-rouge">if</code><span> </span>statement had to be correct as well.</p>
-<p><span>這項練習有很多棘手的事情。首先，</span><code class="highlighter-rouge">range()</code><span><span>需要仔細輸出函數的</span><span>輸入字符串和整數之間的類型轉換</span><span>。</span><span>其次，</span></span><code class="highlighter-rouge">range()</code><span><span>必須仔細構造</span><span>論據以</span><span>涵蓋所有可能的數字。</span><span>第三，</span></span><code class="highlighter-rouge">if</code><span><span>聲明中</span><span>的條件</span><span>也必須正確。</span></span></p>
-<p><span><span></span></span></p>
-<h2>32:Hangman</h2>
-<p>Exercise 32<span>(練習32)</span></p>
-<p><span></span></p>
-<p><em>This exercise is Part 3 of 3 of the Hangman exercise series. The other exercises are:<span> </span><a href="https://www.practicepython.org/exercise/2016/09/24/30-pick-word.html">Part 1</a><span> </span>and<span> </span><a href="https://www.practicepython.org/exercise/2017/01/02/31-guess-letters.html">Part 2</a>.</em></p>
-<p><em>You can start your Python journey anywhere, but to finish this exercise you will have to have finished Parts 1 and 2 or use the solutions (<a href="https://www.practicepython.org/solution/2016/10/15/30-pick-word-solutions.html">Part 1</a><span> </span>and<span> </span><a href="https://www.practicepython.org/solution/2017/01/08/31-guess-letters-solutions.html">Part 2</a>).</em></p>
-<p><em><span><span>本練習是《 Hangman》練習系列3的第3部分。</span><span>其他練習是：</span></span><a href="https://www.practicepython.org/exercise/2016/09/24/30-pick-word.html"><span><span>第1</span></span></a><span></span><a href="https://www.practicepython.org/exercise/2017/01/02/31-guess-letters.html"><span><span>部分</span></span></a><span><span>和</span><a href="https://www.practicepython.org/exercise/2017/01/02/31-guess-letters.html"><span>第2部分</span></a><span>。</span></span></em></p>
-<p><em><span><span>您可以在任何地方開始Python之旅，但是要完成本練習，您將必須完成第1</span></span><a href="https://www.practicepython.org/solution/2016/10/15/30-pick-word-solutions.html"><span><span>部分</span></span></a><span><span>和</span></span><a href="https://www.practicepython.org/solution/2017/01/08/31-guess-letters-solutions.html"><span><span>第2</span></span></a><span><a href="https://www.practicepython.org/solution/2016/10/15/30-pick-word-solutions.html"><span>部分</span></a><span>或使用解決方案（</span><a href="https://www.practicepython.org/solution/2016/10/15/30-pick-word-solutions.html"><span>第1</span></a><a href="https://www.practicepython.org/solution/2017/01/08/31-guess-letters-solutions.html"><span>部分</span></a><span>和</span><a href="https://www.practicepython.org/solution/2017/01/08/31-guess-letters-solutions.html"><span>第2部分</span></a><span>）。</span></span></em></p>
-<p><em><span><span></span></span></em></p>
-<p><em><span><span>In this exercise, we will finish building Hangman. In the game of Hangman, the player only has 6 incorrect guesses (head, body, 2 legs, and 2 arms) before they lose the game.</span></span></em></p>
-<p><span><span>在本練習中，我們將完成“ Hangman”的構建。</span><span>在《 Hangman》遊戲中，玩家在輸掉遊戲前只有6個錯誤的猜測（頭部，身體，2條腿和2條手臂）。</span></span></p>
-<p><span><span></span></span></p>
-<p><span><span>In Part 1, we loaded a random word list and picked a word from it. In Part 2, we wrote the logic for guessing the letter and displaying that information to the user. In this exercise, we have to put it all together and add logic for handling guesses.</span></span></p>
-<p><span><span>在第1部分中，我們加載了一個隨機單詞列表並從中選擇一個單詞。</span><span>在第2部分中，我們編寫了猜測字母並將該信息顯示給用戶的邏輯。</span><span>在本練習中，我們必須將所有內容放在一起並添加邏輯以處理猜測。</span></span></p>
-<p><span><span></span></span></p>
-<p><span><span>Copy your code from Parts 1 and 2 into a new file as a starting point. Now add the following features:</span></span></p>
-<p><span><span>將您的代碼從第1部分和第2部分複製到一個新文件中作為起點。</span><span>現在添加以下功能：</span></span></p>
-<ul>
+<p style="text-align: left;">There were a number of tricky things with this exercise. First, the type conversions between input strings and integers for the<span> </span><code class="highlighter-rouge">range()</code><span> </span>function need to be carefully output. Second, the arguments to<span> </span><code class="highlighter-rouge">range()</code><span> </span>had to be carefully constructed to cover all the possible numbers. Third, the condition in the<span> </span><code class="highlighter-rouge">if</code><span> </span>statement had to be correct as well.</p>
+<p style="text-align: left;"><span>這項練習有很多棘手的事情。首先，</span><code class="highlighter-rouge">range()</code><span><span>需要仔細輸出函數的</span><span>輸入字符串和整數之間的類型轉換</span><span>。</span><span>其次，</span></span><code class="highlighter-rouge">range()</code><span><span>必須仔細構造</span><span>論據以</span><span>涵蓋所有可能的數字。</span><span>第三，</span></span><code class="highlighter-rouge">if</code><span><span>聲明中</span><span>的條件</span><span>也必須正確。</span></span></p>
+<p style="text-align: left;"><span><span></span></span></p>
+32:Hangman
+<p style="text-align: left;">Exercise 32<span>(練習32)</span></p>
+<p style="text-align: left;"><span></span></p>
+<p style="text-align: left;"><em>This exercise is Part 3 of 3 of the Hangman exercise series. The other exercises are:<span> </span><a href="https://www.practicepython.org/exercise/2016/09/24/30-pick-word.html">Part 1</a><span> </span>and<span> </span><a href="https://www.practicepython.org/exercise/2017/01/02/31-guess-letters.html">Part 2</a>.</em></p>
+<p style="text-align: left;"><em>You can start your Python journey anywhere, but to finish this exercise you will have to have finished Parts 1 and 2 or use the solutions (<a href="https://www.practicepython.org/solution/2016/10/15/30-pick-word-solutions.html">Part 1</a><span> </span>and<span> </span><a href="https://www.practicepython.org/solution/2017/01/08/31-guess-letters-solutions.html">Part 2</a>).</em></p>
+<p style="text-align: left;"><em><span><span>本練習是《 Hangman》練習系列3的第3部分。</span><span>其他練習是：</span></span><a href="https://www.practicepython.org/exercise/2016/09/24/30-pick-word.html"><span><span>第1</span></span></a><span></span><a href="https://www.practicepython.org/exercise/2017/01/02/31-guess-letters.html"><span><span>部分</span></span></a><span><span>和</span><a href="https://www.practicepython.org/exercise/2017/01/02/31-guess-letters.html"><span>第2部分</span></a><span>。</span></span></em></p>
+<p style="text-align: left;"><em><span><span>您可以在任何地方開始Python之旅，但是要完成本練習，您將必須完成第1</span></span><a href="https://www.practicepython.org/solution/2016/10/15/30-pick-word-solutions.html"><span><span>部分</span></span></a><span><span>和</span></span><a href="https://www.practicepython.org/solution/2017/01/08/31-guess-letters-solutions.html"><span><span>第2</span></span></a><span><a href="https://www.practicepython.org/solution/2016/10/15/30-pick-word-solutions.html"><span>部分</span></a><span>或使用解決方案（</span><a href="https://www.practicepython.org/solution/2016/10/15/30-pick-word-solutions.html"><span>第1</span></a><a href="https://www.practicepython.org/solution/2017/01/08/31-guess-letters-solutions.html"><span>部分</span></a><span>和</span><a href="https://www.practicepython.org/solution/2017/01/08/31-guess-letters-solutions.html"><span>第2部分</span></a><span>）。</span></span></em></p>
+<p style="text-align: left;"><em><span><span></span></span></em></p>
+<p style="text-align: left;"><em><span><span>In this exercise, we will finish building Hangman. In the game of Hangman, the player only has 6 incorrect guesses (head, body, 2 legs, and 2 arms) before they lose the game.</span></span></em></p>
+<p style="text-align: left;"><span><span>在本練習中，我們將完成“ Hangman”的構建。</span><span>在《 Hangman》遊戲中，玩家在輸掉遊戲前只有6個錯誤的猜測（頭部，身體，2條腿和2條手臂）。</span></span></p>
+<p style="text-align: left;"><span><span></span></span></p>
+<p style="text-align: left;"><span><span>In Part 1, we loaded a random word list and picked a word from it. In Part 2, we wrote the logic for guessing the letter and displaying that information to the user. In this exercise, we have to put it all together and add logic for handling guesses.</span></span></p>
+<p style="text-align: left;"><span><span>在第1部分中，我們加載了一個隨機單詞列表並從中選擇一個單詞。</span><span>在第2部分中，我們編寫了猜測字母並將該信息顯示給用戶的邏輯。</span><span>在本練習中，我們必須將所有內容放在一起並添加邏輯以處理猜測。</span></span></p>
+<p style="text-align: left;"><span><span></span></span></p>
+<p style="text-align: left;"><span><span>Copy your code from Parts 1 and 2 into a new file as a starting point. Now add the following features:</span></span></p>
+<p style="text-align: left;"><span><span>將您的代碼從第1部分和第2部分複製到一個新文件中作為起點。</span><span>現在添加以下功能：</span></span></p>
+<ul style="text-align: left;">
 <li>Only let the user guess 6 times, and tell the user how many guesses they have left.</li>
 <li>Keep track of the letters the user guessed. If the user guesses a letter they already guessed, don’t penalize them - let them guess again.</li>
 </ul>
-<ul>
+<ul style="text-align: left;">
 <li><span><span>僅讓用戶猜測6次，然後告訴用戶他們還剩下多少猜測。</span></span></li>
 <li><span><span>跟踪用戶猜測的字母。</span><span>如果用戶猜出了他們已經猜出的字母，請不要對它們進行懲罰-讓他們再猜一次。</span></span></li>
 </ul>
-<p><span><span>Optional additions可選的補充：</span></span></p>
-<ul>
+<p style="text-align: left;"><span><span>Optional additions可選的補充：</span></span></p>
+<ul style="text-align: left;">
 <li>When the player wins or loses, let them start a new game.</li>
 <li>Rather than telling the user<span> </span><code class="highlighter-rouge">"You have 4 incorrect guesses left"</code>, display some picture art for the Hangman.<span> </span><em>This is challenging - do the other parts of the exercise first!</em></li>
 </ul>
-<ul>
+<ul style="text-align: left;">
 <li><span><span>當玩家贏或輸時，讓他們開始新的遊戲。</span></span></li>
 <li><span><span>不要告訴用戶</span></span><code class="highlighter-rouge">"你只剩4次猜錯的機會"</code><span><span>，</span><span>而是</span><span>為Hangman展示一些圖畫。</span></span><em><span><span>這具有挑戰性-首先進行練習的其他部分！</span></span></em><em><span><span></span></span></em><em><span><span></span></span></em></li>
 </ul>
-<p><span><span>Your solution will be a lot cleaner if you make use of functions to help you!</span></span></p>
-<p><span><span>如果您使用功能來幫助您，您的解決方案將變得更加干淨！</span></span></p>
-<p>Concepts(<span><span>概念)</span></span></p>
-<ul>
+<p style="text-align: left;"><span><span>Your solution will be a lot cleaner if you make use of functions to help you!</span></span></p>
+<p style="text-align: left;"><span><span>如果您使用功能來幫助您，您的解決方案將變得更加干淨！</span></span></p>
+<p style="text-align: left;">Concepts(<span><span>概念)</span></span></p>
+<ul style="text-align: left;">
 <li>Sets</li>
 <li>Code organization</li>
 </ul>
-<ul>
+<ul style="text-align: left;">
 <li><span><span>套裝</span></span></li>
 <li><span><span>代碼組織</span></span></li>
 </ul>
-<p>Sets(套裝)</p>
-<p><span>We already discussed sets </span><a href="https://www.practicepython.org/exercise/2014/05/15/14-list-remove-duplicates.html">in Exercise 14</a><span>, but here is a brief summary:</span></p>
-<p><span><span>我們已經</span></span><a href="https://www.practicepython.org/exercise/2014/05/15/14-list-remove-duplicates.html"><span><span>在練習14中</span></span></a><span><span>討論了集合</span><span>，但這是一個簡短的摘要：</span></span></p>
-<ul>
+<p style="text-align: left;">Sets(套裝)</p>
+<p style="text-align: left;"><span>We already discussed sets </span><a href="https://www.practicepython.org/exercise/2014/05/15/14-list-remove-duplicates.html">in Exercise 14</a><span>, but here is a brief summary:</span></p>
+<p style="text-align: left;"><span><span>我們已經</span></span><a href="https://www.practicepython.org/exercise/2014/05/15/14-list-remove-duplicates.html"><span><span>在練習14中</span></span></a><span><span>討論了集合</span><span>，但這是一個簡短的摘要：</span></span></p>
+<ul style="text-align: left;">
 <li>Sets, like lists, store a collection of items</li>
 <li>The collection of items in a set are unique. There cannot be any repeated elements.</li>
 </ul>
-<ul>
+<ul style="text-align: left;">
 <li><span><span>集合（如列表）存儲項目的集合</span></span></li>
 <li><span><span>集合中的項目集合是唯一的。</span><span>不能有任何重複的元素。</span></span><span><span></span></span></li>
 </ul>
-<p><span><span></span></span></p>
-<p><span><span>The only “gotcha” is that you cannot have a set of lists - each element in the set must be <a href="https://docs.python.org/3.6/glossary.html#term-hashable">hashable</a><span>. Basically this means you can’t have elements that can change in a set, so the objects in your set should be integers or strings. The reason and distinction are not super important; the most important thing to know is that sets are most useful when you want a set of integers or strings, rather than a set of lists.</span></span></span></p>
-<p><span><span>唯一的“陷阱”是您不能擁有一組列表-列表中的每個元素都必須是可</span></span><a href="https://docs.python.org/3.6/glossary.html#term-hashable"><span><span>哈希的</span></span></a><span><span>。</span><span>基本上，這意味著您不能在集合中更改任何元素，因此集合中的對象應為整數或字符串。</span><span>原因和區別並不重要。</span><span>要知道的最重要的一點是，當您需要一組整數或字符串而不是一組列表時，集合最有用。</span></span></p>
-<p><span><span>In Python </span></span></p>
-<p><span><span>在Python中：</span></span></p>
-<figure class="highlight">
+<p style="text-align: left;"><span><span></span></span></p>
+<p style="text-align: left;"><span><span>The only “gotcha” is that you cannot have a set of lists - each element in the set must be <a href="https://docs.python.org/3.6/glossary.html#term-hashable">hashable</a><span>. Basically this means you can’t have elements that can change in a set, so the objects in your set should be integers or strings. The reason and distinction are not super important; the most important thing to know is that sets are most useful when you want a set of integers or strings, rather than a set of lists.</span></span></span></p>
+<p style="text-align: left;"><span><span>唯一的“陷阱”是您不能擁有一組列表-列表中的每個元素都必須是可</span></span><a href="https://docs.python.org/3.6/glossary.html#term-hashable"><span><span>哈希的</span></span></a><span><span>。</span><span>基本上，這意味著您不能在集合中更改任何元素，因此集合中的對象應為整數或字符串。</span><span>原因和區別並不重要。</span><span>要知道的最重要的一點是，當您需要一組整數或字符串而不是一組列表時，集合最有用。</span></span></p>
+<p style="text-align: left;"><span><span>In Python </span></span></p>
+<p style="text-align: left;"><span><span>在Python中：</span></span></p>
+<figure class="highlight" style="text-align: left;">
 <pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>
 <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
@@ -499,9 +497,9 @@ print(divisorList)<br/><br/></pre>
 <span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">my_set</span><span class="p">)</span>
 <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">}<br/></span></code></pre>
 </figure>
-<p><span><span>To add elements to a set, use the <code class="highlighter-rouge">.add()</code><span><span> </span>method:</span></span></span></p>
-<p><span><span>要將元素添加到集合中，請使用</span></span><code class="highlighter-rouge">.add()</code><span><span>方法：</span></span></p>
-<figure class="highlight">
+<p style="text-align: left;"><span><span>To add elements to a set, use the <code class="highlighter-rouge">.add()</code><span><span> </span>method:</span></span></span></p>
+<p style="text-align: left;"><span><span>要將元素添加到集合中，請使用</span></span><code class="highlighter-rouge">.add()</code><span><span>方法：</span></span></p>
+<figure class="highlight" style="text-align: left;">
 <pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">my_set</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>  <span class="c"># makes an empty set</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="n">my_set</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>  <span class="c"># adds the number 5</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">my_set</span><span class="p">)</span>
@@ -513,56 +511,56 @@ print(divisorList)<br/><br/></pre>
 <span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">my_set</span><span class="p">)</span>
 <span class="p">{</span><span class="mi">5</span><span class="p">,</span> <span class="s">"Michele"</span><span class="p">}</span></code></pre>
 </figure>
-<p><span><span>The advantage of sets is that all the elements in it are unique. This makes it very easy to check whether an element is already in the set. All you need to do is ask <code class="highlighter-rouge">elem in my_set</code><span>:</span></span></span></p>
-<p><span><span>集的優點是其中的所有元素都是唯一的。</span><span>這使得檢查元素是否已經在集合中變得非常容易。</span><span>您需要做的只是問</span></span><code class="highlighter-rouge">elem in my_set</code><span><span>：</span></span></p>
-<figure class="highlight">
+<p style="text-align: left;"><span><span>The advantage of sets is that all the elements in it are unique. This makes it very easy to check whether an element is already in the set. All you need to do is ask <code class="highlighter-rouge">elem in my_set</code><span>:</span></span></span></p>
+<p style="text-align: left;"><span><span>集的優點是其中的所有元素都是唯一的。</span><span>這使得檢查元素是否已經在集合中變得非常容易。</span><span>您需要做的只是問</span></span><code class="highlighter-rouge">elem in my_set</code><span><span>：</span></span></p>
+<figure class="highlight" style="text-align: left;">
 <pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">my_set</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">}</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="mi">1</span> <span class="ow">in</span> <span class="n">my_set</span>
 <span class="bp">True</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="mi">4</span> <span class="ow">in</span> <span class="n">my_set</span>
 <span class="bp">False</span></code></pre>
 </figure>
-<p><span><span>And this check is very fast - much faster than doing the same <code class="highlighter-rouge">in</code><span><span> </span>check with a list.</span></span></span></p>
-<p><span><span>而且此檢查非常快-比</span></span><code class="highlighter-rouge">in</code><span><span>使用列表</span><span>進行相同</span><span>檢查</span><span>要快得多</span><span>。</span></span></p>
-<p><span><span></span></span></p>
-<p><span>Hangman Solutions (Hangman解決方案)</span></p>
-<p><span></span></p>
-<p><em><span>本練習是《 Hangman》練習系列3的第3部分。其他練習是：</span><a href="https://www.practicepython.org/exercise/2016/09/24/30-pick-word.html"><span>第1</span></a><span></span><a href="https://www.practicepython.org/exercise/2017/01/02/31-guess-letters.html"><span>部分</span></a><span>和<a href="https://www.practicepython.org/exercise/2017/01/02/31-guess-letters.html">第2部分</a>。</span></em></p>
-<p><em><span><span>您可以在任何地方開始Python之旅，但是要完成本練習，您必須完成第1部分和第2部分。</span></span></em></p>
-<p><span><span>在本練習中，我們將完成“ Hangman”的構建。</span><span>在《 Hangman》遊戲中，玩家在輸掉遊戲前只有6個錯誤的猜測（頭部，身體，2條腿和2條手臂）。</span></span></p>
-<p><span><span>在第1部分中，我們加載了一個隨機單詞列表並從中選擇一個單詞。</span><span>在第2部分中，我們編寫了猜測字母並將該信息顯示給用戶的邏輯。</span><span>在本練習中，我們必須將所有內容放在一起並添加邏輯以處理猜測。</span></span></p>
-<p><span><span>將您的代碼從第1部分和第2部分複製到一個新文件中作為起點。</span><span>現在添加以下功能：</span></span></p>
-<p><span><span></span></span></p>
-<p><em>This exercise is Part 3 of 3 of the Hangman exercise series. The other exercises are:<span> </span><a href="https://www.practicepython.org/exercise/2016/09/24/30-pick-word.html">Part 1</a><span> </span>and<span> </span><a href="https://www.practicepython.org/exercise/2017/01/02/31-guess-letters.html">Part 2</a>.</em></p>
-<p><em>You can start your Python journey anywhere, but to finish this exercise you will have to have finished Parts 1 and 2.</em></p>
-<p>In this exercise, we will finish building Hangman. In the game of Hangman, the player only has 6 incorrect guesses (head, body, 2 legs, and 2 arms) before they lose the game.</p>
-<p>In Part 1, we loaded a random word list and picked a word from it. In Part 2, we wrote the logic for guessing the letter and displaying that information to the user. In this exercise, we have to put it all together and add logic for handling guesses.</p>
-<p>Copy your code from Parts 1 and 2 into a new file as a starting point. Now add the following features:</p>
-<p></p>
-<ul>
+<p style="text-align: left;"><span><span>And this check is very fast - much faster than doing the same <code class="highlighter-rouge">in</code><span><span> </span>check with a list.</span></span></span></p>
+<p style="text-align: left;"><span><span>而且此檢查非常快-比</span></span><code class="highlighter-rouge">in</code><span><span>使用列表</span><span>進行相同</span><span>檢查</span><span>要快得多</span><span>。</span></span></p>
+<p style="text-align: left;"><span><span></span></span></p>
+<p style="text-align: left;"><span>Hangman Solutions (Hangman解決方案)</span></p>
+<p style="text-align: left;"><span></span></p>
+<p style="text-align: left;"><em><span>本練習是《 Hangman》練習系列3的第3部分。其他練習是：</span><a href="https://www.practicepython.org/exercise/2016/09/24/30-pick-word.html"><span>第1</span></a><span></span><a href="https://www.practicepython.org/exercise/2017/01/02/31-guess-letters.html"><span>部分</span></a><span>和<a href="https://www.practicepython.org/exercise/2017/01/02/31-guess-letters.html">第2部分</a>。</span></em></p>
+<p style="text-align: left;"><em><span><span>您可以在任何地方開始Python之旅，但是要完成本練習，您必須完成第1部分和第2部分。</span></span></em></p>
+<p style="text-align: left;"><span><span>在本練習中，我們將完成“ Hangman”的構建。</span><span>在《 Hangman》遊戲中，玩家在輸掉遊戲前只有6個錯誤的猜測（頭部，身體，2條腿和2條手臂）。</span></span></p>
+<p style="text-align: left;"><span><span>在第1部分中，我們加載了一個隨機單詞列表並從中選擇一個單詞。</span><span>在第2部分中，我們編寫了猜測字母並將該信息顯示給用戶的邏輯。</span><span>在本練習中，我們必須將所有內容放在一起並添加邏輯以處理猜測。</span></span></p>
+<p style="text-align: left;"><span><span>將您的代碼從第1部分和第2部分複製到一個新文件中作為起點。</span><span>現在添加以下功能：</span></span></p>
+<p style="text-align: left;"><span><span></span></span></p>
+<p style="text-align: left;"><em>This exercise is Part 3 of 3 of the Hangman exercise series. The other exercises are:<span> </span><a href="https://www.practicepython.org/exercise/2016/09/24/30-pick-word.html">Part 1</a><span> </span>and<span> </span><a href="https://www.practicepython.org/exercise/2017/01/02/31-guess-letters.html">Part 2</a>.</em></p>
+<p style="text-align: left;"><em>You can start your Python journey anywhere, but to finish this exercise you will have to have finished Parts 1 and 2.</em></p>
+<p style="text-align: left;">In this exercise, we will finish building Hangman. In the game of Hangman, the player only has 6 incorrect guesses (head, body, 2 legs, and 2 arms) before they lose the game.</p>
+<p style="text-align: left;">In Part 1, we loaded a random word list and picked a word from it. In Part 2, we wrote the logic for guessing the letter and displaying that information to the user. In this exercise, we have to put it all together and add logic for handling guesses.</p>
+<p style="text-align: left;">Copy your code from Parts 1 and 2 into a new file as a starting point. Now add the following features:</p>
+<p style="text-align: left;"></p>
+<ul style="text-align: left;">
 <li><span>僅讓用戶猜測6次，然後告訴用戶他們還剩下多少猜測。</span></li>
 <li><span>跟踪用戶猜測的字母。如果用戶猜出了他們已經猜出的字母，請不要對它們進行懲罰-讓他們再猜一次。</span></li>
 </ul>
-<ul>
+<ul style="text-align: left;">
 <li>Only let the user guess 6 times, and tell the user how many guesses they have left.</li>
 <li>Keep track of the letters the user guessed. If the user guesses a letter they already guessed, don’t penalize them - let them guess again.</li>
 </ul>
-<p></p>
-<p><span>可選的補充 </span>Optional additions:</p>
-<ul>
+<p style="text-align: left;"></p>
+<p style="text-align: left;"><span>可選的補充 </span>Optional additions:</p>
+<ul style="text-align: left;">
 <li><span>當玩家贏或輸時，讓他們開始新的遊戲。</span></li>
 <li><span>不要告訴用戶</span><code class="highlighter-rouge">"<span>你只剩4次猜錯的機會</span>"</code><span>，而是為Hangman展示一些圖畫。</span><em><span>這具有挑戰性-首先進行練習的其他部分！</span></em></li>
 </ul>
-<ul>
+<ul style="text-align: left;">
 <li>When the player wins or loses, let them start a new game.</li>
 <li>Rather than telling the user<span> </span><code class="highlighter-rouge">"You have 4 incorrect guesses left"</code>, display some picture art for the Hangman.<span> </span><em>This is challenging - do the other parts of the exercise first!</em></li>
 </ul>
-<p><span>如果您使用功能來幫助您，您的解決方案將變得更加干淨！</span></p>
-<p>Your solution will be a lot cleaner if you make use of functions to help you!</p>
-<p></p>
-<p>Sample Solution 示範解答</p>
-<p>Here is a sample solution from a reader that uses the solutions to Parts 1 and 2, and just puts them on one file:</p>
-<p><span>這是來自讀者的示例解決方案，使用了第1部分和第2部分的解決方案，並將它們放在一個文件中：</span></p>
+<p style="text-align: left;"><span>如果您使用功能來幫助您，您的解決方案將變得更加干淨！</span></p>
+<p style="text-align: left;">Your solution will be a lot cleaner if you make use of functions to help you!</p>
+<p style="text-align: left;"></p>
+<p style="text-align: left;">Sample Solution 示範解答</p>
+<p style="text-align: left;">Here is a sample solution from a reader that uses the solutions to Parts 1 and 2, and just puts them on one file:</p>
+<p style="text-align: left;"><span>這是來自讀者的示例解決方案，使用了第1部分和第2部分的解決方案，並將它們放在一個文件中：</span></p>
 <pre>import random
 
 def choose_random_word():
@@ -604,78 +602,79 @@ else:
     print(" ".join(display_list))
     print("Good job! You figured that the word is "+secret_word+" after guessing %s letters!" % guesses)</pre>
 <pre><br/><br/></pre>
-<p><br/><br/><br/></p><h2>35:Birthday Months 生日月份</h2>
-<div>Exercise 35 (練習35)<br/><i></i></div>
-<p><em><span>此練習是生日數據練習系列4的第3部分。其他練習是：</span><a href="https://www.practicepython.org/exercise/2017/01/24/33-birthday-dictionaries.html"><span>第1部分</span></a><span>，</span><a href="https://www.practicepython.org/exercise/2017/02/06/34-birthday-json.html"><span>第2</span></a><span></span><a href="https://www.practicepython.org/exercise/2017/04/02/36-birthday-plots.html"><span>部分</span></a><span>和<a href="https://www.practicepython.org/exercise/2017/04/02/36-birthday-plots.html">第4部分</a>。</span></em></p>
-<p><span><span>在上</span></span><a href="https://www.practicepython.org/exercise/2017/02/06/34-birthday-json.html"><span><span>一個練習中，</span></span></a><span><span>我們將有關著名科學家的姓名和生日的信息保存到磁盤上。</span><span>在本練習中，從磁盤加載該JSON文件，提取所有生日的月份，併計算每個月有多少科學家生日。</span></span></p>
-<p><span><span>您的程序應輸出如下內容：</span></span></p>
-<p><em>This exercise is Part 3 of 4 of the birthday data exercise series. The other exercises are:<span> </span><a href="https://www.practicepython.org/exercise/2017/01/24/33-birthday-dictionaries.html">Part 1</a>,<span> </span><a href="https://www.practicepython.org/exercise/2017/02/06/34-birthday-json.html">Part 2</a>, and<span> </span><a href="https://www.practicepython.org/exercise/2017/04/02/36-birthday-plots.html">Part 4</a>.</em></p>
-<p>In the<span> </span><a href="https://www.practicepython.org/exercise/2017/02/06/34-birthday-json.html">previous exercise</a><span> </span>we saved information about famous scientists’ names and birthdays to disk. In this exercise, load that JSON file from disk, extract the months of all the birthdays, and count how many scientists have a birthday in each month.</p>
-<p>Your program should output something like:</p>
-<figure class="highlight">
+<p style="text-align: left;"><br/><br/><br/></p>
+35:Birthday Months 生日月份
+<div style="text-align: left;">Exercise 35 (練習35)<br/><i></i></div>
+<p style="text-align: left;"><em><span>此練習是生日數據練習系列4的第3部分。其他練習是：</span><a href="https://www.practicepython.org/exercise/2017/01/24/33-birthday-dictionaries.html"><span>第1部分</span></a><span>，</span><a href="https://www.practicepython.org/exercise/2017/02/06/34-birthday-json.html"><span>第2</span></a><span></span><a href="https://www.practicepython.org/exercise/2017/04/02/36-birthday-plots.html"><span>部分</span></a><span>和<a href="https://www.practicepython.org/exercise/2017/04/02/36-birthday-plots.html">第4部分</a>。</span></em></p>
+<p style="text-align: left;"><span><span>在上</span></span><a href="https://www.practicepython.org/exercise/2017/02/06/34-birthday-json.html"><span><span>一個練習中，</span></span></a><span><span>我們將有關著名科學家的姓名和生日的信息保存到磁盤上。</span><span>在本練習中，從磁盤加載該JSON文件，提取所有生日的月份，併計算每個月有多少科學家生日。</span></span></p>
+<p style="text-align: left;"><span><span>您的程序應輸出如下內容：</span></span></p>
+<p style="text-align: left;"><em>This exercise is Part 3 of 4 of the birthday data exercise series. The other exercises are:<span> </span><a href="https://www.practicepython.org/exercise/2017/01/24/33-birthday-dictionaries.html">Part 1</a>,<span> </span><a href="https://www.practicepython.org/exercise/2017/02/06/34-birthday-json.html">Part 2</a>, and<span> </span><a href="https://www.practicepython.org/exercise/2017/04/02/36-birthday-plots.html">Part 4</a>.</em></p>
+<p style="text-align: left;">In the<span> </span><a href="https://www.practicepython.org/exercise/2017/02/06/34-birthday-json.html">previous exercise</a><span> </span>we saved information about famous scientists’ names and birthdays to disk. In this exercise, load that JSON file from disk, extract the months of all the birthdays, and count how many scientists have a birthday in each month.</p>
+<p style="text-align: left;">Your program should output something like:</p>
+<figure class="highlight" style="text-align: left;">
 <pre><code class="language-python" data-lang="python"><span class="p">{</span>
 	<span class="s">"May"</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
 	<span class="s">"November"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
 	<span class="s">"December"</span><span class="p">:</span> <span class="mi">1</span>
 <span class="p">}<br/><br/><br/></span></code></pre>
 </figure>
-<p>Discussion(討論區)</p>
-<p><span>您已經具有使用我們已經介紹的概念完成此練習的技能：</span><a href="https://www.practicepython.org/exercise/2014/02/15/03-list-less-than-ten.html"><span>for循環</span></a><span>，</span><a href="https://www.practicepython.org/exercise/2014/12/06/22-read-from-file.html"><span>字典</span></a><span>和基本算術。但是，我想談談稱為的Python內置函數</span><code class="highlighter-rouge">Counter</code><span>。</span></p>
-<p><code class="highlighter-rouge"><span face="Verdana, Arial, Helvetica, sans-serif" style="font-family: Verdana, Arial, Helvetica, sans-serif;">從</span><a href="https://docs.python.org/3/library/collections.html#collections.Counter">Counter</a></code><span><span>獲取一個列表，併計算列表中每個元素的數量。</span><span>要使用計數器，請先從中導入</span></span><code class="highlighter-rouge">collections</code><span><span>：</span></span></p>
-<p><span><span></span></span></p>
-<figure class="highlight"></figure>
-<p><span><span></span></span></p>
-<p>You already have the skills to achieve this exercise with concepts we’ve already covered:<span> </span><a href="https://www.practicepython.org/exercise/2014/02/15/03-list-less-than-ten.html">for loops</a>,<span> </span><a href="https://www.practicepython.org/exercise/2014/12/06/22-read-from-file.html">dictionaries</a>, and basic arithmetic. However, I want to talk about a Python built-in called a<span> </span><code class="highlighter-rouge">Counter</code>.</p>
-<p>A<span> </span><a href="https://docs.python.org/3/library/collections.html#collections.Counter"><code class="highlighter-rouge">Counter</code></a><span> </span>takes a list and counts how many of each element were in the list. To use the Counter, first import it from<span> </span><code class="highlighter-rouge">collections</code>:</p>
-<p></p>
-<figure class="highlight">
+<p style="text-align: left;">Discussion(討論區)</p>
+<p style="text-align: left;"><span>您已經具有使用我們已經介紹的概念完成此練習的技能：</span><a href="https://www.practicepython.org/exercise/2014/02/15/03-list-less-than-ten.html"><span>for循環</span></a><span>，</span><a href="https://www.practicepython.org/exercise/2014/12/06/22-read-from-file.html"><span>字典</span></a><span>和基本算術。但是，我想談談稱為的Python內置函數</span><code class="highlighter-rouge">Counter</code><span>。</span></p>
+<p style="text-align: left;"><code class="highlighter-rouge"><span face="Verdana, Arial, Helvetica, sans-serif" style="font-family: Verdana, Arial, Helvetica, sans-serif;">從</span><a href="https://docs.python.org/3/library/collections.html#collections.Counter">Counter</a></code><span><span>獲取一個列表，併計算列表中每個元素的數量。</span><span>要使用計數器，請先從中導入</span></span><code class="highlighter-rouge">collections</code><span><span>：</span></span></p>
+<p style="text-align: left;"><span><span></span></span></p>
+<figure class="highlight" style="text-align: left;"></figure>
+<p style="text-align: left;"><span><span></span></span></p>
+<p style="text-align: left;">You already have the skills to achieve this exercise with concepts we’ve already covered:<span> </span><a href="https://www.practicepython.org/exercise/2014/02/15/03-list-less-than-ten.html">for loops</a>,<span> </span><a href="https://www.practicepython.org/exercise/2014/12/06/22-read-from-file.html">dictionaries</a>, and basic arithmetic. However, I want to talk about a Python built-in called a<span> </span><code class="highlighter-rouge">Counter</code>.</p>
+<p style="text-align: left;">A<span> </span><a href="https://docs.python.org/3/library/collections.html#collections.Counter"><code class="highlighter-rouge">Counter</code></a><span> </span>takes a list and counts how many of each element were in the list. To use the Counter, first import it from<span> </span><code class="highlighter-rouge">collections</code>:</p>
+<p style="text-align: left;"></p>
+<figure class="highlight" style="text-align: left;">
 <pre><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">Counter<br/><br/></span></code></pre>
 </figure>
-<p><span>這使您可以</span><code class="highlighter-rouge">Counter</code><span>在程序中使用Python內置的數據結構。然後，給它一個清單：</span></p>
-<p>This lets you use the<span> </span><code class="highlighter-rouge">Counter</code><span> </span>data structure built into Python in your program. Then, give it a list:</p>
-<p></p>
-<figure class="highlight">
+<p style="text-align: left;"><span>這使您可以</span><code class="highlighter-rouge">Counter</code><span>在程序中使用Python內置的數據結構。然後，給它一個清單：</span></p>
+<p style="text-align: left;">This lets you use the<span> </span><code class="highlighter-rouge">Counter</code><span> </span>data structure built into Python in your program. Then, give it a list:</p>
+<p style="text-align: left;"></p>
+<figure class="highlight" style="text-align: left;">
 <pre><code class="language-python" data-lang="python"><span class="n">sandwiches</span> <span class="o">=</span> <span class="p">[</span><span class="s">"ham"</span><span class="p">,</span> <span class="s">"cheese"</span><span class="p">,</span> <span class="s">"roast beef"</span><span class="p">,</span> <span class="s">"ham"</span><span class="p">,</span> <span class="s">"cheese"</span><span class="p">,</span> <span class="s">"roast beef"</span><span class="p">,</span> <span class="s">"ham"</span><span class="p">]</span>
 <span class="n">c</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">(</span><span class="n">sandwiches</span><span class="p">)<br/><br/></span></code></pre>
 </figure>
-<p><span>如果是</span><code class="highlighter-rouge">print(c)</code><span><span>，您將看到以下內容：</span></span></p>
-<p>If you<span> </span><code class="highlighter-rouge">print(c)</code>, you will see this:</p>
-<p></p>
-<figure class="highlight">
+<p style="text-align: left;"><span>如果是</span><code class="highlighter-rouge">print(c)</code><span><span>，您將看到以下內容：</span></span></p>
+<p style="text-align: left;">If you<span> </span><code class="highlighter-rouge">print(c)</code>, you will see this:</p>
+<p style="text-align: left;"></p>
+<figure class="highlight" style="text-align: left;">
 <pre><code class="language-python" data-lang="python"><span class="n">Counter</span><span class="p">({</span><span class="s">"ham"</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s">"roast beef"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s">"cheese"</span><span class="p">:</span> <span class="mi">2</span><span class="p">})</span></code></pre>
 </figure>
-<p><span></span></p>
-<p><span>這意味著我的列表中有3個</span><code class="highlighter-rouge">ham</code><span><span>，2個</span></span><code class="highlighter-rouge">roast beef</code><span><span>和2個</span></span><code class="highlighter-rouge">cheese</code><span><span>三明治。</span><span>我可以直接從中獲取此信息</span></span><code class="highlighter-rouge">Counter</code><span><span>：</span></span></p>
-<p>This means there are 3<span> </span><code class="highlighter-rouge">ham</code>, 2<span> </span><code class="highlighter-rouge">roast beef</code>, and 2<span> </span><code class="highlighter-rouge">cheese</code><span> </span>sandwiches in my list. I can get this information directly from the<span> </span><code class="highlighter-rouge">Counter</code>:</p>
-<p></p>
-<figure class="highlight">
+<p style="text-align: left;"><span></span></p>
+<p style="text-align: left;"><span>這意味著我的列表中有3個</span><code class="highlighter-rouge">ham</code><span><span>，2個</span></span><code class="highlighter-rouge">roast beef</code><span><span>和2個</span></span><code class="highlighter-rouge">cheese</code><span><span>三明治。</span><span>我可以直接從中獲取此信息</span></span><code class="highlighter-rouge">Counter</code><span><span>：</span></span></p>
+<p style="text-align: left;">This means there are 3<span> </span><code class="highlighter-rouge">ham</code>, 2<span> </span><code class="highlighter-rouge">roast beef</code>, and 2<span> </span><code class="highlighter-rouge">cheese</code><span> </span>sandwiches in my list. I can get this information directly from the<span> </span><code class="highlighter-rouge">Counter</code>:</p>
+<p style="text-align: left;"></p>
+<figure class="highlight" style="text-align: left;">
 <pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="s">"There are {} ham sandwiches"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">c</span><span class="p">[</span><span class="s">"ham"</span><span class="p">]))</span>
 <span class="n">There</span> <span class="n">are</span> <span class="mi">3</span> <span class="n">ham</span> <span class="n">sandwiches<br/></span></code></pre>
 </figure>
-<p><span></span></p>
-<p><span>希望這是有用的！</span></p>
-<p>Hope this is useful!</p>
-<p></p>
-<p><span>Birthday Months Solutions 生日月份解決方案</span></p>
-<p><span></span></p>
-<p><span><em>This exercise is Part 3 of 4 of the birthday data exercise series. The other exercises are: <a href="https://www.practicepython.org/exercise/2017/01/24/33-birthday-dictionaries.html">Part 1</a>, <a href="https://www.practicepython.org/exercise/2017/02/06/34-birthday-json.html">Part 2</a>, and <a href="https://www.practicepython.org/exercise/2017/04/02/36-birthday-plots.html">Part 4</a>.</em></span></p>
-<p><em><span>此練習是生日數據練習系列4的第3部分。其他練習是：</span><a href="https://www.practicepython.org/exercise/2017/01/24/33-birthday-dictionaries.html"><span>第1部分</span></a><span>，</span><a href="https://www.practicepython.org/exercise/2017/02/06/34-birthday-json.html"><span>第2</span></a><span></span><a href="https://www.practicepython.org/exercise/2017/04/02/36-birthday-plots.html"><span>部分</span></a><span>和<a href="https://www.practicepython.org/exercise/2017/04/02/36-birthday-plots.html">第4部分</a>。</span></em></p>
-<p><em><span></span></em></p>
-<p><em><span>In the <a href="https://www.practicepython.org/exercise/2017/02/06/34-birthday-json.html">previous exercise</a><span><span> </span>we saved information about famous scientists’ names and birthdays to disk. In this exercise, load that JSON file from disk, extract the months of all the birthdays, and count how many scientists have a birthday in each month.</span></span></em></p>
-<p><span><span>在上</span></span><a href="https://www.practicepython.org/exercise/2017/02/06/34-birthday-json.html"><span><span>一個練習中，</span></span></a><span><span>我們將有關著名科學家的姓名和生日的信息保存到磁盤上。</span><span>在本練習中，從磁盤加載該JSON文件，提取所有生日的月份，併計算每個月有多少科學家生日。</span></span></p>
-<p><span><span></span></span></p>
-<p><span><span>Your program should output something like:</span></span></p>
-<p><span><span>您的程序應輸出如下內容：</span></span></p>
-<figure class="highlight">
+<p style="text-align: left;"><span></span></p>
+<p style="text-align: left;"><span>希望這是有用的！</span></p>
+<p style="text-align: left;">Hope this is useful!</p>
+<p style="text-align: left;"></p>
+<p style="text-align: left;"><span>Birthday Months Solutions 生日月份解決方案</span></p>
+<p style="text-align: left;"><span></span></p>
+<p style="text-align: left;"><span><em>This exercise is Part 3 of 4 of the birthday data exercise series. The other exercises are: <a href="https://www.practicepython.org/exercise/2017/01/24/33-birthday-dictionaries.html">Part 1</a>, <a href="https://www.practicepython.org/exercise/2017/02/06/34-birthday-json.html">Part 2</a>, and <a href="https://www.practicepython.org/exercise/2017/04/02/36-birthday-plots.html">Part 4</a>.</em></span></p>
+<p style="text-align: left;"><em><span>此練習是生日數據練習系列4的第3部分。其他練習是：</span><a href="https://www.practicepython.org/exercise/2017/01/24/33-birthday-dictionaries.html"><span>第1部分</span></a><span>，</span><a href="https://www.practicepython.org/exercise/2017/02/06/34-birthday-json.html"><span>第2</span></a><span></span><a href="https://www.practicepython.org/exercise/2017/04/02/36-birthday-plots.html"><span>部分</span></a><span>和<a href="https://www.practicepython.org/exercise/2017/04/02/36-birthday-plots.html">第4部分</a>。</span></em></p>
+<p style="text-align: left;"><em><span></span></em></p>
+<p style="text-align: left;"><em><span>In the <a href="https://www.practicepython.org/exercise/2017/02/06/34-birthday-json.html">previous exercise</a><span><span> </span>we saved information about famous scientists’ names and birthdays to disk. In this exercise, load that JSON file from disk, extract the months of all the birthdays, and count how many scientists have a birthday in each month.</span></span></em></p>
+<p style="text-align: left;"><span><span>在上</span></span><a href="https://www.practicepython.org/exercise/2017/02/06/34-birthday-json.html"><span><span>一個練習中，</span></span></a><span><span>我們將有關著名科學家的姓名和生日的信息保存到磁盤上。</span><span>在本練習中，從磁盤加載該JSON文件，提取所有生日的月份，併計算每個月有多少科學家生日。</span></span></p>
+<p style="text-align: left;"><span><span></span></span></p>
+<p style="text-align: left;"><span><span>Your program should output something like:</span></span></p>
+<p style="text-align: left;"><span><span>您的程序應輸出如下內容：</span></span></p>
+<figure class="highlight" style="text-align: left;">
 <pre><code class="language-python" data-lang="python"><span class="p">{</span>
 	<span class="s">"May"</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
 	<span class="s">"November"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
 	<span class="s">"December"</span><span class="p">:</span> <span class="mi">1</span>
 <span class="p">}</span></code></pre>
 </figure>
-<p>Solution <span><span>解決方案</span></span></p>
-<p><span><span>Here is one reader solution using built-in Counters. This reader’s solution did not specify what kind of format the months have to be in, but as you can see from their use of <code class="highlighter-rouge">x.split()[0]</code><span><span> </span>to extract the months that they expect the month format to be of the type “May 5, 2010”.</span></span></span></p>
-<p><span><span>這是一個使用內置計數器的讀者解決方案。</span><span>該讀者的解決方案未指定月份必須採用哪種格式，但是從他們的使用中可以看出，他們</span></span><code class="highlighter-rouge">x.split()[0]</code><span><span>提取月份時希望他們的月份格式為“ 2010年5月5日”。</span></span></p>
+<p style="text-align: left;">Solution <span><span>解決方案</span></span></p>
+<p style="text-align: left;"><span><span>Here is one reader solution using built-in Counters. This reader’s solution did not specify what kind of format the months have to be in, but as you can see from their use of <code class="highlighter-rouge">x.split()[0]</code><span><span> </span>to extract the months that they expect the month format to be of the type “May 5, 2010”.</span></span></span></p>
+<p style="text-align: left;"><span><span>這是一個使用內置計數器的讀者解決方案。</span><span>該讀者的解決方案未指定月份必須採用哪種格式，但是從他們的使用中可以看出，他們</span></span><code class="highlighter-rouge">x.split()[0]</code><span><span>提取月份時希望他們的月份格式為“ 2010年5月5日”。</span></span></p>
 <pre>import json
 from collections import Counter
 
@@ -687,7 +686,8 @@ with open("info.json", "r") as f:
 for x in birthdays.values():
     month.append(x.split()[0])
 
-print(Counter(month))</pre><h1>作業進度</h1>
+print(Counter(month))</pre>
+<h1 style="text-align: left;">作業進度</h1>
 <p style="text-align: left;">Week              進度目標                           完成進度                </p>
 <p style="text-align: left;"> W1          建立Github倉儲                         已完成</p>
 <p style="text-align: left;"> W2          建立網頁                                    <span>已完成</span></p>
@@ -699,7 +699,8 @@ print(Counter(month))</pre><h1>作業進度</h1>
 <p style="text-align: left;"><span> W7           完成作業心得                            </span><span>已完成</span></p>
 <p style="text-align: left;"></p>
 <p style="text-align: left;">未來規劃</p>
-<p style="text-align: left;"></p><h1>About</h1>
+<p style="text-align: left;"></p>
+<h1 style="text-align: left;">About</h1>
 <p style="text-align: left;">此內容管理系統以 <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 作為 submodule 運作, 可以選定對應的版本運作, cmsimde 可以持續改版, 不會影響之前設為 submodule, 使用舊版 cmsimde 模組的內容管理相關運作.</p>
 <h4 style="text-align: left;">利用 cmsimde 建立靜態網誌方法:</h4>
 <p style="text-align: left;">1. 在 github 建立倉儲, git clone 到近端</p>
@@ -710,11 +711,9 @@ print(Counter(month))</pre><h1>作業進度</h1>
 <p style="text-align: left;">動態內容編輯完成後, 以 generate_pages 轉為靜態內容, 以 git add commit 及 push 將內容推到遠端.</p>
 <p style="text-align: left;">4. 之後若要以 git clone 取下包含 submodule 的所有內容, 執行:</p>
 <p style="text-align: left;">git clone --recurse-submodules<span> </span><a href="https://github.com/mdecourse/newcms.git">https://github.com/mdecourse/newcms.git</a></p>
-<h2>Develop</h2>
+Develop
 <p style="text-align: left;"><a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 的開發, 可以在一個目錄中放入 cmsimde, 然後將 up_dir 中的內容放到與 cmsimde 目錄同位階的地方, 使用 command 進入 cmsimde 目錄, 執行 python wsgi.py, 就可以啟動, 以瀏覽器 https://localhost:9443 就可以連接, 以 admin 作為管理者密碼, 就可以登入維護內容.</p>
 <p style="text-align: left;">cmsimde 的開發採用 Leo Editor, 開啟 cmsimde 目錄中的 cmsimde.leo 就可以進行程式修改, 結束後, 若要保留網際內容, 只要將 cmsimde 外部的內容倒回 up_dir 目錄中即可後續對 cmsimde 遠端倉儲進行改版.</p>
 <p style="text-align: left;">init.py 位於  up_dir 目錄, 可以設定 site_title 與 uwsgi 等變數.</p>
-</div>
-</div>
 </div>
 </div>

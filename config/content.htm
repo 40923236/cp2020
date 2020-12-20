@@ -365,14 +365,15 @@
 <pre><span class="c1">#用以處理url數據庫<br/></span><span class="kn">import</span> <span class="nn"><a name="kln-25"></a><a class="indexed_symbol local_indexed_symbol" onclick="parent.postMessage({'referent':'.kaggle.usercode.12220899.44629092.urllib'}, '*')">urllib</a>.request<br/></span><span class="c1"><br/></span><span class="n"><a name="kln-26"></a><a class="indexed_symbol local_indexed_symbol" onclick="parent.postMessage({'referent':'.kaggle.usercode.12220899.44629092.target_url'}, '*')">target_url</a></span> <span class="o">=</span> <span class="s2">"https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0776" </span>#指定目標位置<br/><br/><span class="n"><a name="kln-27"></a><a class="indexed_symbol local_indexed_symbol" onclick="parent.postMessage({'referent':'.kaggle.usercode.12220899.44629092.cp1a'}, '*')">cp1b</a></span> <span class="o">=</span> <span class="p">[]</span> <br/><span class="k">for</span> <span class="n"><a name="kln-28"></a><a class="indexed_symbol local_indexed_symbol" onclick="parent.postMessage({'referent':'.kaggle.usercode.12220899.44629092.line'}, '*')">line</a></span> <span class="ow">in</span> <span class="n"><a class="indexed_symbol local_indexed_symbol" onclick="parent.postMessage({'referent':'.kaggle.usercode.12220899.44629092.urllib'}, '*')">urllib</a></span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n"><a class="indexed_symbol local_indexed_symbol" onclick="parent.postMessage({'referent':'.kaggle.usercode.12220899.44629092.target_url'}, '*')">target_url</a></span><span class="p">): #打開目標網頁地址<br/><br/></span><span class="c1">#利用 int() 將字串內容轉換為整數字串<br/>#(</span><span class="n"><a class="indexed_symbol local_indexed_symbol" onclick="parent.postMessage({'referent':'.kaggle.usercode.12220899.44629092.line'}, '*')">line</a></span><span class="o">.</span><span class="n"><a class="indexed_symbol global_indexed_symbol" onclick="parent.postMessage({'referent':'.root.indexer-src.typeshed.stdlib.2and3.builtins.object.decode'}, '*')">decode)將字串用指定方式解碼<br/></a></span><span class="c1">#(</span><span class="s1">utf-8)解碼方式<br/></span><span class="n"><a name="kln-30"></a><a class="indexed_symbol local_indexed_symbol" onclick="parent.postMessage({'referent':'.kaggle.usercode.12220899.44629092.cp1a'}, '*')">cp1b</a></span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb"><a class="indexed_symbol global_indexed_symbol" onclick="parent.postMessage({'referent':'.root.indexer-src.typeshed.stdlib.2and3.builtins.int'}, '*')">int</a></span><span class="p">(</span><span class="n"><a class="indexed_symbol local_indexed_symbol" onclick="parent.postMessage({'referent':'.kaggle.usercode.12220899.44629092.line'}, '*')">line</a></span><span class="o">.</span><span class="n"><a class="indexed_symbol global_indexed_symbol" onclick="parent.postMessage({'referent':'.root.indexer-src.typeshed.stdlib.2and3.builtins.object.decode'}, '*')">decode</a></span><span class="p">(</span><span class="s1">'utf-8'</span><span class="p">)</span><span class="o">.</span><span class="n"><a class="indexed_symbol global_indexed_symbol" onclick="parent.postMessage({'referent':'.root.indexer-src.typeshed.stdlib.2and3.builtins.object.rstrip'}, '*')">rstrip</a></span><span class="p">()))<br/><br/></span><span class="c1">#輸出(line.decode('utf-8'), end = "") #utf-8或iso8859-1 或任何編碼方式<br/></span><span class="nb"><a name="kln-32"></a><a class="indexed_symbol global_indexed_symbol" onclick="parent.postMessage({'referent':'.root.indexer-src.typeshed.stdlib.2and3.builtins.print'}, '*')">print</a></span><span class="p">(</span><span class="n"><a class="indexed_symbol local_indexed_symbol" onclick="parent.postMessage({'referent':'.kaggle.usercode.12220899.44629092.cp1a'}, '*')">cp1b</a></span><span class="p">) #輸出結果</span></pre>
 <pre><span class="p"> </span></pre>
 <p style="text-align: left;"><span>執行結果</span></p>
-<p style="text-align: left;"><img alt="" height="648" src="/images/123.png" width="1913"/></p><h1>HW3</h1>
+<p style="text-align: left;"><img alt="" height="648" src="/images/123.png" width="1913"/></p>
+<h1>HW3</h1>
 <p style="text-align: left;">作業3:個人分配範圍</p>
 <ul style="text-align: left;">
 <li>4:<span> </span><a href="https://www.practicepython.org/exercise/2014/02/26/04-divisors.html">Divisors</a><span> </span></li>
 <li><span>32:<span> </span><a href="https://www.practicepython.org/exercise/2017/01/10/32-hangman.html">Hangman</a><span> </span></span></li>
 <li><span><span>35:<span> </span><a href="https://www.practicepython.org/exercise/2017/02/28/35-birthday-months.html">Birthday Months</a></span></span><span><span></span></span><span><span></span></span><span><span></span></span></li>
 </ul>
-<h2>4:Divisors除數</h2>
+4:Divisors除數
 <p style="text-align: left;">Exercise 4(<span>練習4)</span></p>
 <p style="text-align: left;"><span>Create a program that asks the user for a number and then prints out a list of all the divisors of that number. (If you don’t know what a <em>divisor</em><span><span> </span>is, it is a number that divides evenly into another number. For example, 13 is a divisor of 26 because 26 / 13 has no remainder.)</span></span></p>
 <p style="text-align: left;"><span><span>創建一個程序，詢問用戶一個數字，然後打印出該數字的所有除數的列表。（如果您不知道</span><em><span><span>除數</span></span></em><span><span>是多少，它是一個平均除以另一個數的數字。例如，13是26的除數，因為26/13沒有餘數。）</span></span></span></p>
@@ -428,7 +429,7 @@ print(divisorList)<br/><br/></pre>
 <p style="text-align: left;">There were a number of tricky things with this exercise. First, the type conversions between input strings and integers for the<span> </span><code class="highlighter-rouge">range()</code><span> </span>function need to be carefully output. Second, the arguments to<span> </span><code class="highlighter-rouge">range()</code><span> </span>had to be carefully constructed to cover all the possible numbers. Third, the condition in the<span> </span><code class="highlighter-rouge">if</code><span> </span>statement had to be correct as well.</p>
 <p style="text-align: left;"><span>這項練習有很多棘手的事情。首先，</span><code class="highlighter-rouge">range()</code><span><span>需要仔細輸出函數的</span><span>輸入字符串和整數之間的類型轉換</span><span>。</span><span>其次，</span></span><code class="highlighter-rouge">range()</code><span><span>必須仔細構造</span><span>論據以</span><span>涵蓋所有可能的數字。</span><span>第三，</span></span><code class="highlighter-rouge">if</code><span><span>聲明中</span><span>的條件</span><span>也必須正確。</span></span></p>
 <p style="text-align: left;"><span><span></span></span></p>
-<h2>32:Hangman</h2>
+32:Hangman
 <p style="text-align: left;">Exercise 32<span>(練習32)</span></p>
 <p style="text-align: left;"><span></span></p>
 <p style="text-align: left;"><em>This exercise is Part 3 of 3 of the Hangman exercise series. The other exercises are:<span> </span><a href="https://www.practicepython.org/exercise/2016/09/24/30-pick-word.html">Part 1</a><span> </span>and<span> </span><a href="https://www.practicepython.org/exercise/2017/01/02/31-guess-letters.html">Part 2</a>.</em></p>
@@ -602,7 +603,7 @@ else:
     print("Good job! You figured that the word is "+secret_word+" after guessing %s letters!" % guesses)</pre>
 <pre><br/><br/></pre>
 <p style="text-align: left;"><br/><br/><br/></p>
-<h2>35:Birthday Months 生日月份</h2>
+35:Birthday Months 生日月份
 <div style="text-align: left;">Exercise 35 (練習35)<br/><i></i></div>
 <p style="text-align: left;"><em><span>此練習是生日數據練習系列4的第3部分。其他練習是：</span><a href="https://www.practicepython.org/exercise/2017/01/24/33-birthday-dictionaries.html"><span>第1部分</span></a><span>，</span><a href="https://www.practicepython.org/exercise/2017/02/06/34-birthday-json.html"><span>第2</span></a><span></span><a href="https://www.practicepython.org/exercise/2017/04/02/36-birthday-plots.html"><span>部分</span></a><span>和<a href="https://www.practicepython.org/exercise/2017/04/02/36-birthday-plots.html">第4部分</a>。</span></em></p>
 <p style="text-align: left;"><span><span>在上</span></span><a href="https://www.practicepython.org/exercise/2017/02/06/34-birthday-json.html"><span><span>一個練習中，</span></span></a><span><span>我們將有關著名科學家的姓名和生日的信息保存到磁盤上。</span><span>在本練習中，從磁盤加載該JSON文件，提取所有生日的月份，併計算每個月有多少科學家生日。</span></span></p>
@@ -685,7 +686,8 @@ with open("info.json", "r") as f:
 for x in birthdays.values():
     month.append(x.split()[0])
 
-print(Counter(month))</pre><h1>作業進度</h1>
+print(Counter(month))</pre>
+<h1>作業進度</h1>
 <p style="text-align: left;">Week              進度目標                           完成進度                </p>
 <p style="text-align: left;"> W1          建立Github倉儲                         已完成</p>
 <p style="text-align: left;"> W2          建立網頁                                    <span>已完成</span></p>

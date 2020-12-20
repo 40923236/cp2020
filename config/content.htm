@@ -573,12 +573,7 @@ def choose_random_word():
             words.append(line.replace("\n","".strip()))
             line = file.readline()
     choice=words[random.randint(0,len(words)-1)]
-    return choice
-
-
-
-
-
+    return choice<br/>
 print("Welcome to Hangman!")
 secret_word=choose_random_word()
 dashes=list(secret_word)
@@ -608,7 +603,7 @@ if letter == "exit":
 else:
     print(" ".join(display_list))
     print("Good job! You figured that the word is "+secret_word+" after guessing %s letters!" % guesses)</pre>
-<p><br/><br/></p>
+<pre><br/><br/></pre>
 <p><br/><br/><br/></p><h2>35:Birthday Months 生日月份</h2>
 <div>Exercise 35 (練習35)<br/><i></i></div>
 <p><em><span>此練習是生日數據練習系列4的第3部分。其他練習是：</span><a href="https://www.practicepython.org/exercise/2017/01/24/33-birthday-dictionaries.html"><span>第1部分</span></a><span>，</span><a href="https://www.practicepython.org/exercise/2017/02/06/34-birthday-json.html"><span>第2</span></a><span></span><a href="https://www.practicepython.org/exercise/2017/04/02/36-birthday-plots.html"><span>部分</span></a><span>和<a href="https://www.practicepython.org/exercise/2017/04/02/36-birthday-plots.html">第4部分</a>。</span></em></p>

@@ -173,7 +173,7 @@ img.add_border {
 <p style="text-align: left;"><span><span>Divisors Solutions(解決方案)</span></span></p>
 <p style="text-align: left;"><span><span>Create a program that asks the user for a number and then prints out a list of all the divisors of that number. (If you don’t know what a <em>divisor</em><span><span> </span>is, it is a number that divides evenly into another number. For example, 13 is a divisor of 26 because 26 / 13 has no remainder.)</span></span></span></p>
 <p style="text-align: left;"><span><span><span><span>創建一個程序，詢問用戶一個數字，然後打印出該數字的所有除數的列表。（如果您不知道</span><em><span><span>除數</span></span></em><span><span>是多少，它是一個平均除以另一個數的數字。例如，13是26的除數，因為26/13沒有餘數。）</span></span></span></span></span></p>
-<pre>__author__ = 'jeffreyhunt'
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">__author__ = 'jeffreyhunt'
 
 num = int(input("Please choose a number to divide: "))
 
@@ -185,7 +185,8 @@ for number in listRange:
     if num % number == 0:
         divisorList.append(number)
 
-print(divisorList)<br/><br/></pre>
+print(divisorList)</pre>
+<pre><br/><br/><br/></pre>
 <p style="text-align: left;">There were a number of tricky things with this exercise. First, the type conversions between input strings and integers for the<span> </span><code class="highlighter-rouge">range()</code><span> </span>function need to be carefully output. Second, the arguments to<span> </span><code class="highlighter-rouge">range()</code><span> </span>had to be carefully constructed to cover all the possible numbers. Third, the condition in the<span> </span><code class="highlighter-rouge">if</code><span> </span>statement had to be correct as well.</p>
 <p style="text-align: left;"><span>這項練習有很多棘手的事情。首先，</span><code class="highlighter-rouge">range()</code><span><span>需要仔細輸出函數的</span><span>輸入字符串和整數之間的類型轉換</span><span>。</span><span>其次，</span></span><code class="highlighter-rouge">range()</code><span><span>必須仔細構造</span><span>論據以</span><span>涵蓋所有可能的數字。</span><span>第三，</span></span><code class="highlighter-rouge">if</code><span><span>聲明中</span><span>的條件</span><span>也必須正確。</span></span></p>
 <p style="text-align: left;"><span><span></span></span></p><br />HW3 << <a href='HW3.html'>Previous</a> <a href='32-Hangman.html'>Next</a> >> 32-Hangman</div>

@@ -194,35 +194,38 @@ img.add_border {
 <p style="text-align: left;"><span><span>In Python </span></span></p>
 <p style="text-align: left;"><span><span>在Python中：</span></span></p>
 <figure class="highlight" style="text-align: left;">
-<pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>
-<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">my_set</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">}</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">my_set</span><span class="p">)</span>
-<span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">}<br/></span></code></pre>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">&gt;&gt;&gt; my_list = [1, 1, 2, 2, 3, 3, 5, 5, 8]
+&gt;&gt;&gt; print(my_list)
+[1, 1, 2, 2, 3, 3, 5, 5, 8]
+&gt;&gt;&gt; my_set = {1, 1, 2, 2, 3, 3, 5, 5, 8}
+&gt;&gt;&gt; print(my_set)
+{1, 2, 3, 5, 8}</pre>
+<pre><code class="language-python" data-lang="python"><span class="p"><br/><br/></span></code></pre>
 </figure>
 <p style="text-align: left;"><span><span>To add elements to a set, use the <code class="highlighter-rouge">.add()</code><span><span> </span>method:</span></span></span></p>
 <p style="text-align: left;"><span><span>要將元素添加到集合中，請使用</span></span><code class="highlighter-rouge">.add()</code><span><span>方法：</span></span></p>
 <figure class="highlight" style="text-align: left;">
-<pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">my_set</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>  <span class="c"># makes an empty set</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">my_set</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>  <span class="c"># adds the number 5</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">my_set</span><span class="p">)</span>
-<span class="p">{</span><span class="mi">5</span><span class="p">}</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">my_set</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s">"Michele"</span><span class="p">)</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">my_set</span><span class="p">)</span>
-<span class="p">{</span><span class="mi">5</span><span class="p">,</span> <span class="s">"Michele"</span><span class="p">}</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">my_set</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">my_set</span><span class="p">)</span>
-<span class="p">{</span><span class="mi">5</span><span class="p">,</span> <span class="s">"Michele"</span><span class="p">}</span></code></pre>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">&gt;&gt;&gt; my_set = set()  # makes an empty set
+&gt;&gt;&gt; my_set.add(5)  # adds the number 5
+&gt;&gt;&gt; print(my_set)
+{5}
+&gt;&gt;&gt; my_set.add("Michele")
+&gt;&gt;&gt; print(my_set)
+{5, "Michele"}
+&gt;&gt;&gt; my_set.add(5)
+&gt;&gt;&gt; print(my_set)
+{5, "Michele"}</pre>
+<pre><br/><br/></pre>
 </figure>
 <p style="text-align: left;"><span><span>The advantage of sets is that all the elements in it are unique. This makes it very easy to check whether an element is already in the set. All you need to do is ask <code class="highlighter-rouge">elem in my_set</code><span>:</span></span></span></p>
 <p style="text-align: left;"><span><span>集的優點是其中的所有元素都是唯一的。</span><span>這使得檢查元素是否已經在集合中變得非常容易。</span><span>您需要做的只是問</span></span><code class="highlighter-rouge">elem in my_set</code><span><span>：</span></span></p>
 <figure class="highlight" style="text-align: left;">
-<pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">my_set</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">}</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="mi">1</span> <span class="ow">in</span> <span class="n">my_set</span>
-<span class="bp">True</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="mi">4</span> <span class="ow">in</span> <span class="n">my_set</span>
-<span class="bp">False</span></code></pre>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">&gt;&gt;&gt; my_set = {1, 2, 3, 5}
+&gt;&gt;&gt; 1 in my_set
+True
+&gt;&gt;&gt; 4 in my_set
+False</pre>
+<pre><br/><br/></pre>
 </figure>
 <p style="text-align: left;"><span><span>And this check is very fast - much faster than doing the same <code class="highlighter-rouge">in</code><span><span> </span>check with a list.</span></span></span></p>
 <p style="text-align: left;"><span><span>而且此檢查非常快-比</span></span><code class="highlighter-rouge">in</code><span><span>使用列表</span><span>進行相同</span><span>檢查</span><span>要快得多</span><span>。</span></span></p>
@@ -265,7 +268,7 @@ img.add_border {
 <p style="text-align: left;">Sample Solution 示範解答</p>
 <p style="text-align: left;">Here is a sample solution from a reader that uses the solutions to Parts 1 and 2, and just puts them on one file:</p>
 <p style="text-align: left;"><span>這是來自讀者的示例解決方案，使用了第1部分和第2部分的解決方案，並將它們放在一個文件中：</span></p>
-<pre>import random
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import random
 
 def choose_random_word():
     words=[]
@@ -275,7 +278,8 @@ def choose_random_word():
             words.append(line.replace("\n","".strip()))
             line = file.readline()
     choice=words[random.randint(0,len(words)-1)]
-    return choice<br/>
+    return choice
+
 print("Welcome to Hangman!")
 secret_word=choose_random_word()
 dashes=list(secret_word)
@@ -304,10 +308,11 @@ if letter == "exit":
     print("Thanks!")
 else:
     print(" ".join(display_list))
-    print("Good job! You figured that the word is "+secret_word+" after guessing %s letters!" % guesses)</pre>
+    print("Good job! You figured that the word is "+secret_word+" after guessing %s letters!" % guesses)
+</pre>
 <pre><br/><br/></pre>
-<p style="text-align: left;"><br/><br/><br/></p>
-<br />4-Divisors除數 << <a href='4-Divisors除數.html'>Previous</a> <a href='35-Birthday Months 生日月份.html'>Next</a> >> 35-Birthday Months 生日月份</div>
+<pre></pre>
+<p style="text-align: left;"><br/><br/><br/></p><br />4-Divisors除數 << <a href='4-Divisors除數.html'>Previous</a> <a href='35-Birthday Months 生日月份.html'>Next</a> >> 35-Birthday Months 生日月份</div>
         
     <!-- footer -->
       <div class="container">

@@ -360,12 +360,33 @@
 <h1>HW2</h1>
 <p style="text-align: left;">Kaggle W8</p>
 <p style="text-align: left;"><a href="https://www.kaggle.com/cp202040923236/cp2020w8">https://www.kaggle.com/cp202040923236/cp2020w8</a></p>
-<h2>HW2</h2>
+<h2>HW2-1</h2>
 <pre><span class="c1"># <a href="https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0776">https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0776 </a>#url目標<br/></span></pre>
 <pre><span class="c1">#用以處理url數據庫<br/></span><span class="kn">import</span> <span class="nn"><a name="kln-25"></a><a class="indexed_symbol local_indexed_symbol" onclick="parent.postMessage({'referent':'.kaggle.usercode.12220899.44629092.urllib'}, '*')">urllib</a>.request<br/></span><span class="c1"><br/></span><span class="n"><a name="kln-26"></a><a class="indexed_symbol local_indexed_symbol" onclick="parent.postMessage({'referent':'.kaggle.usercode.12220899.44629092.target_url'}, '*')">target_url</a></span> <span class="o">=</span> <span class="s2">"https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0776" </span>#指定目標位置<br/><br/><span class="n"><a name="kln-27"></a><a class="indexed_symbol local_indexed_symbol" onclick="parent.postMessage({'referent':'.kaggle.usercode.12220899.44629092.cp1a'}, '*')">cp1b</a></span> <span class="o">=</span> <span class="p">[]</span> <br/><span class="k">for</span> <span class="n"><a name="kln-28"></a><a class="indexed_symbol local_indexed_symbol" onclick="parent.postMessage({'referent':'.kaggle.usercode.12220899.44629092.line'}, '*')">line</a></span> <span class="ow">in</span> <span class="n"><a class="indexed_symbol local_indexed_symbol" onclick="parent.postMessage({'referent':'.kaggle.usercode.12220899.44629092.urllib'}, '*')">urllib</a></span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n"><a class="indexed_symbol local_indexed_symbol" onclick="parent.postMessage({'referent':'.kaggle.usercode.12220899.44629092.target_url'}, '*')">target_url</a></span><span class="p">): #打開目標網頁地址<br/><br/></span><span class="c1">#利用 int() 將字串內容轉換為整數字串<br/>#(</span><span class="n"><a class="indexed_symbol local_indexed_symbol" onclick="parent.postMessage({'referent':'.kaggle.usercode.12220899.44629092.line'}, '*')">line</a></span><span class="o">.</span><span class="n"><a class="indexed_symbol global_indexed_symbol" onclick="parent.postMessage({'referent':'.root.indexer-src.typeshed.stdlib.2and3.builtins.object.decode'}, '*')">decode)將字串用指定方式解碼<br/></a></span><span class="c1">#(</span><span class="s1">utf-8)解碼方式<br/></span><span class="n"><a name="kln-30"></a><a class="indexed_symbol local_indexed_symbol" onclick="parent.postMessage({'referent':'.kaggle.usercode.12220899.44629092.cp1a'}, '*')">cp1b</a></span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb"><a class="indexed_symbol global_indexed_symbol" onclick="parent.postMessage({'referent':'.root.indexer-src.typeshed.stdlib.2and3.builtins.int'}, '*')">int</a></span><span class="p">(</span><span class="n"><a class="indexed_symbol local_indexed_symbol" onclick="parent.postMessage({'referent':'.kaggle.usercode.12220899.44629092.line'}, '*')">line</a></span><span class="o">.</span><span class="n"><a class="indexed_symbol global_indexed_symbol" onclick="parent.postMessage({'referent':'.root.indexer-src.typeshed.stdlib.2and3.builtins.object.decode'}, '*')">decode</a></span><span class="p">(</span><span class="s1">'utf-8'</span><span class="p">)</span><span class="o">.</span><span class="n"><a class="indexed_symbol global_indexed_symbol" onclick="parent.postMessage({'referent':'.root.indexer-src.typeshed.stdlib.2and3.builtins.object.rstrip'}, '*')">rstrip</a></span><span class="p">()))<br/><br/></span><span class="c1">#輸出(line.decode('utf-8'), end = "") #utf-8或iso8859-1 或任何編碼方式<br/></span><span class="nb"><a name="kln-32"></a><a class="indexed_symbol global_indexed_symbol" onclick="parent.postMessage({'referent':'.root.indexer-src.typeshed.stdlib.2and3.builtins.print'}, '*')">print</a></span><span class="p">(</span><span class="n"><a class="indexed_symbol local_indexed_symbol" onclick="parent.postMessage({'referent':'.kaggle.usercode.12220899.44629092.cp1a'}, '*')">cp1b</a></span><span class="p">) #輸出結果</span></pre>
 <pre><span class="p"> </span></pre>
 <p style="text-align: left;"><span>執行結果</span></p>
-<p style="text-align: left;"><img alt="" height="648" src="/images/123.png" width="1913"/></p><h1>HW3</h1>
+<p style="text-align: left;"><img alt="" height="648" src="/images/123.png" width="1913"/></p>
+<h2>HW2-2</h2>
+<p>利用亂數分組所產生之結果，可以利用此結果進行還原</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">''' now can we read [[40823148, 40923203, 40923208, 40923209, 40923210, 40923223, 40923225, 40923230, 40923238, 40923239, 40923244, 40923249], [40523148, 40923201, 40923202, 40923218, 40923219, 40923228, 40923231, 40923232, 40923240, 40923247, 40923248, 40923250], [40823152, 40923205, 40923212, 40923214, 40923217, 40923226, 40923236, 40923241, 40923242, 40923246, 40923251], [40723217, 40728238, 40923206, 40923216, 40923220, 40923227, 40923233, 40923237, 40923243, 40923252, 40923253], [40523138, 40923204, 40923207, 40923211, 40923213, 40923221, 40923224, 40923229, 40923234, 40923235, 40923245]] 
+into one dimensional list
+'''
+cp1bGroup = [[40823148, 40923203, 40923208, 40923209, 40923210, 40923223, 40923225, 40923230, 40923238, 40923239, 40923244, 40923249], [40523148, 40923201, 40923202, 40923218, 40923219, 40923228, 40923231, 40923232, 40923240, 40923247, 40923248, 40923250], [40823152, 40923205, 40923212, 40923214, 40923217, 40923226, 40923236, 40923241, 40923242, 40923246, 40923251], [40723217, 40728238, 40923206, 40923216, 40923220, 40923227, 40923233, 40923237, 40923243, 40923252, 40923253], [40523138, 40923204, 40923207, 40923211, 40923213, 40923221, 40923224, 40923229, 40923234, 40923235, 40923245]] 
+# len() can be used to get the length of a list
+#print(len(cp1bGroup))
+# so we can use the for loop to read group member out
+groupNum = len(cp1bGroup)
+cp1b = []
+for i in range(groupNum):
+    # use len() to get student number for each group
+    studNum = len(cp1bGroup[i])
+    #print(cp1bGroup[i])
+    for j in range(studNum):
+        cp1b.append(cp1bGroup[i][j])
+print(cp1b)
+# yes, we transfer two dimensional list into one diimension
+# for the next step we may need to compare two lists to find the discrepancy</pre>
+<pre><br/><br/>執行結果<br/><img alt="" height="648" src="/images/1.png" width="1875"/></pre><h1>HW3</h1>
 <p style="text-align: left;">作業3:個人分配範圍</p>
 <ul style="text-align: left;">
 <li>4:<span> </span><a href="https://www.practicepython.org/exercise/2014/02/26/04-divisors.html">Divisors</a><span> </span></li>
@@ -428,7 +449,8 @@ print(divisorList)</pre>
 <pre><br/><br/><br/></pre>
 <p style="text-align: left;">There were a number of tricky things with this exercise. First, the type conversions between input strings and integers for the<span> </span><code class="highlighter-rouge">range()</code><span> </span>function need to be carefully output. Second, the arguments to<span> </span><code class="highlighter-rouge">range()</code><span> </span>had to be carefully constructed to cover all the possible numbers. Third, the condition in the<span> </span><code class="highlighter-rouge">if</code><span> </span>statement had to be correct as well.</p>
 <p style="text-align: left;"><span>這項練習有很多棘手的事情。首先，</span><code class="highlighter-rouge">range()</code><span><span>需要仔細輸出函數的</span><span>輸入字符串和整數之間的類型轉換</span><span>。</span><span>其次，</span></span><code class="highlighter-rouge">range()</code><span><span>必須仔細構造</span><span>論據以</span><span>涵蓋所有可能的數字。</span><span>第三，</span></span><code class="highlighter-rouge">if</code><span><span>聲明中</span><span>的條件</span><span>也必須正確。</span></span></p>
-<p style="text-align: left;"><span><span></span></span></p><h2>32-Hangman</h2>
+<p style="text-align: left;"><span><span></span></span></p>
+<h2>32-Hangman</h2>
 <p style="text-align: left;">Exercise 32<span>(練習32)</span></p>
 <p style="text-align: left;"><span></span></p>
 <p style="text-align: left;"><em>This exercise is Part 3 of 3 of the Hangman exercise series. The other exercises are:<span> </span><a href="https://www.practicepython.org/exercise/2016/09/24/30-pick-word.html">Part 1</a><span> </span>and<span> </span><a href="https://www.practicepython.org/exercise/2017/01/02/31-guess-letters.html">Part 2</a>.</em></p>
@@ -489,35 +511,38 @@ print(divisorList)</pre>
 <p style="text-align: left;"><span><span>In Python </span></span></p>
 <p style="text-align: left;"><span><span>在Python中：</span></span></p>
 <figure class="highlight" style="text-align: left;">
-<pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>
-<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">my_set</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">}</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">my_set</span><span class="p">)</span>
-<span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">}<br/></span></code></pre>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">&gt;&gt;&gt; my_list = [1, 1, 2, 2, 3, 3, 5, 5, 8]
+&gt;&gt;&gt; print(my_list)
+[1, 1, 2, 2, 3, 3, 5, 5, 8]
+&gt;&gt;&gt; my_set = {1, 1, 2, 2, 3, 3, 5, 5, 8}
+&gt;&gt;&gt; print(my_set)
+{1, 2, 3, 5, 8}</pre>
+<pre><code class="language-python" data-lang="python"><span class="p"><br/><br/></span></code></pre>
 </figure>
 <p style="text-align: left;"><span><span>To add elements to a set, use the <code class="highlighter-rouge">.add()</code><span><span> </span>method:</span></span></span></p>
 <p style="text-align: left;"><span><span>要將元素添加到集合中，請使用</span></span><code class="highlighter-rouge">.add()</code><span><span>方法：</span></span></p>
 <figure class="highlight" style="text-align: left;">
-<pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">my_set</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>  <span class="c"># makes an empty set</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">my_set</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>  <span class="c"># adds the number 5</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">my_set</span><span class="p">)</span>
-<span class="p">{</span><span class="mi">5</span><span class="p">}</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">my_set</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s">"Michele"</span><span class="p">)</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">my_set</span><span class="p">)</span>
-<span class="p">{</span><span class="mi">5</span><span class="p">,</span> <span class="s">"Michele"</span><span class="p">}</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">my_set</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">my_set</span><span class="p">)</span>
-<span class="p">{</span><span class="mi">5</span><span class="p">,</span> <span class="s">"Michele"</span><span class="p">}</span></code></pre>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">&gt;&gt;&gt; my_set = set()  # makes an empty set
+&gt;&gt;&gt; my_set.add(5)  # adds the number 5
+&gt;&gt;&gt; print(my_set)
+{5}
+&gt;&gt;&gt; my_set.add("Michele")
+&gt;&gt;&gt; print(my_set)
+{5, "Michele"}
+&gt;&gt;&gt; my_set.add(5)
+&gt;&gt;&gt; print(my_set)
+{5, "Michele"}</pre>
+<pre><br/><br/></pre>
 </figure>
 <p style="text-align: left;"><span><span>The advantage of sets is that all the elements in it are unique. This makes it very easy to check whether an element is already in the set. All you need to do is ask <code class="highlighter-rouge">elem in my_set</code><span>:</span></span></span></p>
 <p style="text-align: left;"><span><span>集的優點是其中的所有元素都是唯一的。</span><span>這使得檢查元素是否已經在集合中變得非常容易。</span><span>您需要做的只是問</span></span><code class="highlighter-rouge">elem in my_set</code><span><span>：</span></span></p>
 <figure class="highlight" style="text-align: left;">
-<pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">my_set</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">}</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="mi">1</span> <span class="ow">in</span> <span class="n">my_set</span>
-<span class="bp">True</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="mi">4</span> <span class="ow">in</span> <span class="n">my_set</span>
-<span class="bp">False</span></code></pre>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">&gt;&gt;&gt; my_set = {1, 2, 3, 5}
+&gt;&gt;&gt; 1 in my_set
+True
+&gt;&gt;&gt; 4 in my_set
+False</pre>
+<pre><br/><br/></pre>
 </figure>
 <p style="text-align: left;"><span><span>And this check is very fast - much faster than doing the same <code class="highlighter-rouge">in</code><span><span> </span>check with a list.</span></span></span></p>
 <p style="text-align: left;"><span><span>而且此檢查非常快-比</span></span><code class="highlighter-rouge">in</code><span><span>使用列表</span><span>進行相同</span><span>檢查</span><span>要快得多</span><span>。</span></span></p>
@@ -560,7 +585,7 @@ print(divisorList)</pre>
 <p style="text-align: left;">Sample Solution 示範解答</p>
 <p style="text-align: left;">Here is a sample solution from a reader that uses the solutions to Parts 1 and 2, and just puts them on one file:</p>
 <p style="text-align: left;"><span>這是來自讀者的示例解決方案，使用了第1部分和第2部分的解決方案，並將它們放在一個文件中：</span></p>
-<pre>import random
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import random
 
 def choose_random_word():
     words=[]
@@ -570,7 +595,8 @@ def choose_random_word():
             words.append(line.replace("\n","".strip()))
             line = file.readline()
     choice=words[random.randint(0,len(words)-1)]
-    return choice<br/>
+    return choice
+
 print("Welcome to Hangman!")
 secret_word=choose_random_word()
 dashes=list(secret_word)
@@ -599,8 +625,10 @@ if letter == "exit":
     print("Thanks!")
 else:
     print(" ".join(display_list))
-    print("Good job! You figured that the word is "+secret_word+" after guessing %s letters!" % guesses)</pre>
+    print("Good job! You figured that the word is "+secret_word+" after guessing %s letters!" % guesses)
+</pre>
 <pre><br/><br/></pre>
+<pre></pre>
 <p style="text-align: left;"><br/><br/><br/></p><h2>35-Birthday Months 生日月份</h2>
 <div style="text-align: left;">Exercise 35 (練習35)<br/><i></i></div>
 <p style="text-align: left;"><em><span>此練習是生日數據練習系列4的第3部分。其他練習是：</span><a href="https://www.practicepython.org/exercise/2017/01/24/33-birthday-dictionaries.html"><span>第1部分</span></a><span>，</span><a href="https://www.practicepython.org/exercise/2017/02/06/34-birthday-json.html"><span>第2</span></a><span></span><a href="https://www.practicepython.org/exercise/2017/04/02/36-birthday-plots.html"><span>部分</span></a><span>和<a href="https://www.practicepython.org/exercise/2017/04/02/36-birthday-plots.html">第4部分</a>。</span></em></p>
@@ -610,11 +638,12 @@ else:
 <p style="text-align: left;">In the<span> </span><a href="https://www.practicepython.org/exercise/2017/02/06/34-birthday-json.html">previous exercise</a><span> </span>we saved information about famous scientists’ names and birthdays to disk. In this exercise, load that JSON file from disk, extract the months of all the birthdays, and count how many scientists have a birthday in each month.</p>
 <p style="text-align: left;">Your program should output something like:</p>
 <figure class="highlight" style="text-align: left;">
-<pre><code class="language-python" data-lang="python"><span class="p">{</span>
-	<span class="s">"May"</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
-	<span class="s">"November"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
-	<span class="s">"December"</span><span class="p">:</span> <span class="mi">1</span>
-<span class="p">}<br/><br/><br/></span></code></pre>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">{
+	"May": 3,
+	"November": 2,
+	"December": 1
+}</pre>
+<pre><code class="language-python" data-lang="python"><span class="p"><br/><br/><br/><br/></span></code></pre>
 </figure>
 <p style="text-align: left;">Discussion(討論區)</p>
 <p style="text-align: left;"><span>您已經具有使用我們已經介紹的概念完成此練習的技能：</span><a href="https://www.practicepython.org/exercise/2014/02/15/03-list-less-than-ten.html"><span>for循環</span></a><span>，</span><a href="https://www.practicepython.org/exercise/2014/12/06/22-read-from-file.html"><span>字典</span></a><span>和基本算術。但是，我想談談稱為的Python內置函數</span><code class="highlighter-rouge">Counter</code><span>。</span></p>
@@ -626,28 +655,33 @@ else:
 <p style="text-align: left;">A<span> </span><a href="https://docs.python.org/3/library/collections.html#collections.Counter"><code class="highlighter-rouge">Counter</code></a><span> </span>takes a list and counts how many of each element were in the list. To use the Counter, first import it from<span> </span><code class="highlighter-rouge">collections</code>:</p>
 <p style="text-align: left;"></p>
 <figure class="highlight" style="text-align: left;">
-<pre><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">Counter<br/><br/></span></code></pre>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">from collections import Counter</pre>
+<pre><code class="language-python" data-lang="python"><span class="n"><br/><br/><br/></span></code></pre>
 </figure>
 <p style="text-align: left;"><span>這使您可以</span><code class="highlighter-rouge">Counter</code><span>在程序中使用Python內置的數據結構。然後，給它一個清單：</span></p>
 <p style="text-align: left;">This lets you use the<span> </span><code class="highlighter-rouge">Counter</code><span> </span>data structure built into Python in your program. Then, give it a list:</p>
 <p style="text-align: left;"></p>
 <figure class="highlight" style="text-align: left;">
-<pre><code class="language-python" data-lang="python"><span class="n">sandwiches</span> <span class="o">=</span> <span class="p">[</span><span class="s">"ham"</span><span class="p">,</span> <span class="s">"cheese"</span><span class="p">,</span> <span class="s">"roast beef"</span><span class="p">,</span> <span class="s">"ham"</span><span class="p">,</span> <span class="s">"cheese"</span><span class="p">,</span> <span class="s">"roast beef"</span><span class="p">,</span> <span class="s">"ham"</span><span class="p">]</span>
-<span class="n">c</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">(</span><span class="n">sandwiches</span><span class="p">)<br/><br/></span></code></pre>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">sandwiches = ["ham", "cheese", "roast beef", "ham", "cheese", "roast beef", "ham"]
+c = Counter(sandwiches)
+</pre>
+<pre><code class="language-python" data-lang="python"><span class="p"><br/><br/></span></code></pre>
 </figure>
 <p style="text-align: left;"><span>如果是</span><code class="highlighter-rouge">print(c)</code><span><span>，您將看到以下內容：</span></span></p>
 <p style="text-align: left;">If you<span> </span><code class="highlighter-rouge">print(c)</code>, you will see this:</p>
 <p style="text-align: left;"></p>
 <figure class="highlight" style="text-align: left;">
-<pre><code class="language-python" data-lang="python"><span class="n">Counter</span><span class="p">({</span><span class="s">"ham"</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s">"roast beef"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s">"cheese"</span><span class="p">:</span> <span class="mi">2</span><span class="p">})</span></code></pre>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">Counter({"ham": 3, "roast beef": 2, "cheese": 2})</pre>
+<pre><br/><br/></pre>
 </figure>
 <p style="text-align: left;"><span></span></p>
 <p style="text-align: left;"><span>這意味著我的列表中有3個</span><code class="highlighter-rouge">ham</code><span><span>，2個</span></span><code class="highlighter-rouge">roast beef</code><span><span>和2個</span></span><code class="highlighter-rouge">cheese</code><span><span>三明治。</span><span>我可以直接從中獲取此信息</span></span><code class="highlighter-rouge">Counter</code><span><span>：</span></span></p>
 <p style="text-align: left;">This means there are 3<span> </span><code class="highlighter-rouge">ham</code>, 2<span> </span><code class="highlighter-rouge">roast beef</code>, and 2<span> </span><code class="highlighter-rouge">cheese</code><span> </span>sandwiches in my list. I can get this information directly from the<span> </span><code class="highlighter-rouge">Counter</code>:</p>
 <p style="text-align: left;"></p>
 <figure class="highlight" style="text-align: left;">
-<pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="s">"There are {} ham sandwiches"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">c</span><span class="p">[</span><span class="s">"ham"</span><span class="p">]))</span>
-<span class="n">There</span> <span class="n">are</span> <span class="mi">3</span> <span class="n">ham</span> <span class="n">sandwiches<br/></span></code></pre>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">&gt;&gt;&gt; print("There are {} ham sandwiches".format(c["ham"]))
+There are 3 ham sandwiches</pre>
+<pre><code class="language-python" data-lang="python"><span class="n"><br/><br/></span></code></pre>
 </figure>
 <p style="text-align: left;"><span></span></p>
 <p style="text-align: left;"><span>希望這是有用的！</span></p>
@@ -664,16 +698,17 @@ else:
 <p style="text-align: left;"><span><span>Your program should output something like:</span></span></p>
 <p style="text-align: left;"><span><span>您的程序應輸出如下內容：</span></span></p>
 <figure class="highlight" style="text-align: left;">
-<pre><code class="language-python" data-lang="python"><span class="p">{</span>
-	<span class="s">"May"</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
-	<span class="s">"November"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
-	<span class="s">"December"</span><span class="p">:</span> <span class="mi">1</span>
-<span class="p">}</span></code></pre>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">{
+	"May": 3,
+	"November": 2,
+	"December": 1
+}</pre>
+<pre><br/><br/></pre>
 </figure>
 <p style="text-align: left;">Solution <span><span>解決方案</span></span></p>
 <p style="text-align: left;"><span><span>Here is one reader solution using built-in Counters. This reader’s solution did not specify what kind of format the months have to be in, but as you can see from their use of <code class="highlighter-rouge">x.split()[0]</code><span><span> </span>to extract the months that they expect the month format to be of the type “May 5, 2010”.</span></span></span></p>
 <p style="text-align: left;"><span><span>這是一個使用內置計數器的讀者解決方案。</span><span>該讀者的解決方案未指定月份必須採用哪種格式，但是從他們的使用中可以看出，他們</span></span><code class="highlighter-rouge">x.split()[0]</code><span><span>提取月份時希望他們的月份格式為“ 2010年5月5日”。</span></span></p>
-<pre>import json
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import json
 from collections import Counter
 
 month = []
@@ -684,7 +719,8 @@ with open("info.json", "r") as f:
 for x in birthdays.values():
     month.append(x.split()[0])
 
-print(Counter(month))</pre><h1>作業進度</h1>
+print(Counter(month))</pre>
+<pre><br/><br/></pre><h1>作業進度</h1>
 <p style="text-align: left;">Week              進度目標                           完成進度                </p>
 <p style="text-align: left;"> W1          建立Github倉儲                         已完成</p>
 <p style="text-align: left;"> W2          建立網頁                                    <span>已完成</span></p>
